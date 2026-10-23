@@ -1,0 +1,235 @@
+name = "lu-raz-closure-lemmas"
+version = "0.1.0"
+defaultTargets = ["LuRazSubmissionBridge", "LuRazCompletionRobustness"]
+[[lean_lib]]
+name = "LuRazClosureLemmas"
+[[lean_lib]]
+name = "LuRazParametric"
+[[lean_lib]]
+name = "LuRazFollowup"
+[[lean_lib]]
+name = "RazReimer"
+[[lean_lib]]
+name = "RazReimerPredicates"
+
+[[lean_lib]]
+name = "LuRazVariableUnions"
+
+[[lean_lib]]
+name = "LuRazGenerated"
+
+[[lean_lib]]
+name = "LuRazCore14"
+
+[[lean_lib]]
+name = "LuRazCore14Normal"
+
+[[lean_lib]]
+name = "LuRazCore14Unique"
+
+[[lean_lib]]
+name = "EnumerationCounting"
+
+[[lean_lib]]
+name = "LuRazCore14Enumeration"
+
+[[lean_lib]]
+name = "LuRazCore14Count"
+
+[[lean_lib]]
+name = "LuRazCore14Results"
+
+[[lean_lib]]
+name = "LuRazCore23"
+
+[[lean_lib]]
+name = "LuRazCore23Normal"
+
+[[lean_lib]]
+name = "LuRazCore23Unique"
+
+[[lean_lib]]
+name = "LuRazCore23Recovery"
+
+[[lean_lib]]
+name = "LuRazPEnumeration"
+
+[[lean_lib]]
+name = "LuRazCore23Enumeration"
+
+[[lean_lib]]
+name = "LuRazCore23Results"
+
+[[lean_lib]]
+name = "LuRazFiniteClosure"
+
+[[lean_lib]]
+name = "LuRazMixedResults"
+
+[[lean_lib]]
+name = "LuRazCompletionRobustness"
+
+[[lean_lib]]
+name = "LuRazSmallBase"
+
+[[lean_lib]]
+name = "LuRazSmallNormal"
+
+[[lean_lib]]
+name = "LuRazSmallUnique"
+
+[[lean_lib]]
+name = "LuRazSmallResults"
+
+[[lean_lib]]
+name = "LuRazCore24"
+
+[[lean_lib]]
+name = "LuRazCore24Results"
+
+[[lean_lib]]
+name = "LuRazCore124"
+
+[[lean_lib]]
+name = "LuRazCore124Normal"
+
+[[lean_lib]]
+name = "LuRazCore124Unique"
+
+[[lean_lib]]
+name = "LuRazCore124Enumeration"
+
+[[lean_lib]]
+name = "LuRazCore124Results"
+
+[[lean_lib]]
+name = "LuRazCore234"
+
+[[lean_lib]]
+name = "LuRazCore234Normal"
+
+[[lean_lib]]
+name = "LuRazCore234Exact"
+
+[[lean_lib]]
+name = "LuRazCore234Unique"
+
+[[lean_lib]]
+name = "LuRazCore234Enumeration"
+
+[[lean_lib]]
+name = "LuRazCore234Results"
+
+[[lean_lib]]
+name = "LuRazCore123"
+
+[[lean_lib]]
+name = "LuRazCore123Normal"
+
+[[lean_lib]]
+name = "LuRazCore123Exact"
+
+[[lean_lib]]
+name = "LuRazCore123Unique"
+
+[[lean_lib]]
+name = "LuRazCore123Enumeration"
+
+[[lean_lib]]
+name = "LuRazCore123Count"
+
+[[lean_lib]]
+name = "LuRazCore123Results"
+
+[[lean_lib]]
+name = "LuRazCore134"
+
+[[lean_lib]]
+name = "LuRazCore134Normal"
+
+[[lean_lib]]
+name = "LuRazCore134Exact"
+
+[[lean_lib]]
+name = "LuRazCore134Unique"
+
+[[lean_lib]]
+name = "LuRazCore134Enumeration"
+
+[[lean_lib]]
+name = "LuRazCore134Results"
+
+[[lean_lib]]
+name = "LuRazNonFullClosure"
+
+[[lean_lib]]
+name = "LuRazNonFullResults"
+
+[[lean_lib]]
+name = "LuRazFullReduction"
+
+[[lean_lib]]
+name = "LuRazFullNormal"
+
+[[lean_lib]]
+name = "LuRazFullJL"
+
+[[lean_lib]]
+name = "LuRazFullFixed"
+
+[[lean_lib]]
+name = "LuRazFullAugment"
+
+[[lean_lib]]
+name = "LuRazFullSeeds"
+
+[[lean_lib]]
+name = "LuRazFullGuarded"
+
+[[lean_lib]]
+name = "LuRazFullRawParts"
+
+[[lean_lib]]
+name = "LuRazFullCoverage"
+
+[[lean_lib]]
+name = "LuRazFullExact"
+
+[[lean_lib]]
+name = "LuRazFullUnique"
+
+[[lean_lib]]
+name = "LuRazFullEnumeration"
+
+[[lean_lib]]
+name = "LuRazFullCount"
+
+[[lean_lib]]
+name = "LuRazTotalClosure"
+
+[[lean_lib]]
+name = "RangeCounting"
+
+[[lean_lib]]
+name = "LuRazFrequencyBase"
+
+[[lean_lib]]
+name = "ColumnTotalCases"
+
+[[lean_lib]]
+name = "FrequencyBridge"
+
+[[lean_lib]]
+name = "LuRazFrequency"
+
+[[lean_lib]]
+name = "LuRazSizes"
+
+[[lean_lib]]
+name = "LuRazStructure"
+
+[[lean_lib]]
+name = "LuRazResults"
+
+[[lean_lib]]
+name = "LuRazSubmissionBridge"

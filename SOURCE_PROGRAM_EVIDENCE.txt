@@ -1,0 +1,65 @@
+Author-program source evidence: subsequent update
+22 October 2026
+
+This update supersedes the earlier program-access limitation recorded in
+PROOF.txt, STATEMENT_CORRESPONDENCE.txt and PRIOR_WORK.txt. The core proof,
+statement bridge, construction definition, and reproduction script are unchanged.
+
+The generator.cpp preview linked from the paper's appendix was successfully
+opened in OneDrive. Its complete editor text was read using the visible editor's
+Select All / Copy operation (4696 characters including clipboard line endings).
+The preview displayed a source modification date of 2 May 2024. That displayed
+metadata is not independent proof of publication priority or author identity.
+
+Source link, as provided in the original paper:
+https://1drv.ms/u/c/ecb46a0d19fbe4ee/EZX3hGbeXaRJvJXeveP9JYEBf3kLJcPtKVBGuBy6Aukpaw?e=Bk9aZD
+Parent mathematical source: https://arxiv.org/html/2405.10639v2#S6
+
+At displayed source lines 124--135, the block for index n/2+1 writes membership
+at coordinates 2 and 4, zeroes at 5 through n/2+1, ones at n/2+2 through n-2,
+and zeroes at n-1,n. The resulting row is exactly
+  {2,4} union [n/2+2,n-2].
+With n=4q, this is {2,4} union [2q+2,4q-2], the existing Lean row_case_7.
+The source-level observation therefore supports the completion directly, rather
+than merely inferring it from numerical examples. Separately, the Lean uniqueness
+proof derives it from the other printed rows and the stated equal frequencies.
+
+No C++ program was executed, modified, or used as a trusted proof checker.
+No binary/download-byte checksum is claimed: this observation used editor text,
+whose line endings may differ from downloaded file bytes. The authors' C++ source
+is not redistributed in this package. The author has not supplied a new written
+erratum or endorsement. This source check is not prize-team acceptance.
+The closure convention remains explicitly distinguished in the mathematical
+statement; the source's displayed examples and the proved +1 bridge are retained.
+
+Verification boundary
+This note is documentation added after the 91-file source snapshot was frozen
+for clean checking. It changes none of those 91 hashed files. Its separate hash
+is recorded in the final delivery inventory. The source-manifest and reproduction
+report refer to the unchanged mathematical/code snapshot; the note supplies an
+additional source observation only.
+
+Companion closure program, subsequently read
+The complete OneDrive editor text of uclosure.cpp was also copied (7650
+characters including clipboard line endings), through the appendix's link:
+https://1drv.ms/u/c/ecb46a0d19fbe4ee/EYzgZrJwlCdBppdLFCrLY-sBvYlWfbIerNS36Ni5ZSUoFQ?e=LF1ces
+The preview displayed a source modification date of 7 May 2024; the same caveat
+about metadata and publication priority applies.
+At lines 38--49, the input family S is filled with rows ending in S. At line 161,
+the program passes S directly to its closure routine. At lines 277--322, that
+routine initializes its output to the input family, repeatedly adjoins new binary
+unions, and returns the resulting family. It does not insert an empty-set seed.
+Because every generator of the specified construction is nonempty, this computes
+nonempty-subfamily closure. Thus the author's computational convention directly
+agrees with cl_+ in the Lean theorem. The literal empty-subfamily definition still
+has the separate +1 value; no claim that the definitions are equal is made.
+Neither source program was compiled or executed. These are source-level
+observations, not a formal proof of a C++ implementation or of its runtime safety.
+
+Additional live duplicate search
+A signed-in GitHub repository search on 22 October 2026 used
+  repo:TheJustinSunPrize/awards "2405.10639"
+The results page reported Issues (0) and Pull requests (0). No state filter was
+applied. This is an actual live repository search but only for this identifier;
+submissions that do not cite it, unindexed text, other repositories and unpublished
+work may be missed. No global priority conclusion follows.

@@ -1,0 +1,69 @@
+Bounded prior-work and submission-scope review
+Review date: 22 October 2026
+
+Conclusion
+The searches performed did not identify a prior complete proof or Lean
+formalization of this exact completed-family, quadratic-count statement. This is
+a bounded negative search result, not evidence establishing world priority.
+Priority, attribution, and whether the clarified statement is accepted remain
+unresolved. No probability of an award or reward amount is inferred.
+
+Primary mathematical references examined
+1. Lu--Raz, arXiv:2405.10639v2, Sections 3--5 and appendix links.
+   https://arxiv.org/html/2405.10639v2
+   Section 5 labels the exact quadratic formula as Conjecture 3; its cited finite
+   computations are not a universal proof. Section 4 proves quadratic order.
+2. MathDB #363119, the quadratic union-closure conjecture for the constructed family.
+   https://mathdb.com/p/363119/the-quadratic-union-closure-conjecture-for-the-constructed-f
+   The fetched page showed no posted solution, but explicitly left its literature
+   status uncertain. An empty solutions list does not exclude an earlier proof.
+3. Raz's 2017 counterexample concerns a different statement. The existing public
+   repository and prize inquiry below do not supply a public version of this new
+   general quadratic counting proof:
+   https://github.com/renxuhang/raz-reimer-lean
+   https://github.com/TheJustinSunPrize/awards/issues/5124
+   At the checked page, the visible comments were the submitting account's source
+   update; no organizer acceptance of this new counting topic was established.
+
+Searches
+Web searches used the arXiv identifier, exact paper title, conjecture name, author
+names, formula fragments and combinations of 'proof', 'Lean', and 'Conjecture 3'.
+Representative exact queries from this review:
+ "2405.10639" proof conjecture closure
+ "quadratic union-closure" proof
+ "2405.10639" "proof" "conjecture 3"
+ "quadratic union-closure" -site:mathdb.com
+ site:github.com "363119"
+ "Lu" "Raz" "closure" "conjecture 3"
+ "Note on the union-closed sets conjecture and Reimer"
+ "2405.10639" "Lean"
+ "Kengbo Lu" "closure" proof conjecture
+ "quadratic union-closure conjecture" solved proof
+ site:github.com/TheJustinSunPrize/awards "Lu" "Raz"
+ site:github.com/TheJustinSunPrize/awards "quadratic union"
+Results identified the source and matching MathDB page, without an inspected
+earlier complete count proof. Many formula-fragment hits were irrelevant and
+were not used as mathematical evidence. Search indexing is incomplete and may
+lag new or deleted submissions; private or unindexed work was not accessible.
+
+Prize mapping and process
+The checked official pilot register listed 50 problems and rollout 'prepared'.
+No confirmed JSP identifier or prize-pilot mapping for this statement is recorded
+in this package. The checked 21 October catalog snapshot also did not establish
+one; this is not a claim that a live catalog can never contain a related topic.
+Official recommendations explicitly do not establish eligibility. Existing issue
+#5124 is about the 2017 Reimer-condition strengthening, not this 2024 conjecture.
+ https://github.com/TheJustinSunPrize/awards/blob/main/.github/ISSUE_TEMPLATE/recommend-problem.yml
+ https://github.com/TheJustinSunPrize/awards/blob/main/problems/mathdb-pilot.md
+ https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process-mathdb.md
+ https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process.md
+
+Limitations and next review
+The authors' linked OneDrive programs could not be retrieved in this session;
+no comparison against their source code is claimed. Public GitHub pages and web
+searches were used, but a fresh authenticated exhaustive GitHub code/API search
+was not completed. Neither the present local completion date nor editable Git
+timestamps alone establish independent public history. Before asserting a first
+contribution, compare any newly surfaced complete proof, selected commit, public
+release, issue/PR history and independent date evidence. The final reviewer must
+assess the exact statement, not merely the shared words 'union-closed'.

@@ -1,0 +1,318 @@
+Exact nonempty union-closure size for a completed Lu--Raz family
+Research version, 22 October 2026
+
+This is a mathematical proof accompanying the Lean development, not a statement
+of acceptance, global priority, or award eligibility. The underlying construction
+and conjectured polynomial are due to Kengbo Lu and Abigail Raz (2024),
+arXiv:2405.10639v2, Sections 3 and 5. The proof development used OpenAI Codex.
+
+1. Precise statement and the two source conventions
+
+Let q>=4, x=q-1, h=2q, n=4q, r=3q+1, e0=q+3 and m=2q-3. All sets lie in [1,n],
+and [a,b] denotes an integer interval, empty when a>b. Complete the missing source
+row S_(2q+1) by {2,4} union [2q+2,4q-2]. Retain all other rows printed in Section 3.
+Let cl_+(S) be the unions of NONEMPTY subfamilies. Then
+
+ |cl_+(S)| = (23q^2+35q-42)/2
+           = (23x^2+81x+16)/2
+           = 23n^2/32+35n/8-21.                              (1)
+
+Thus (1) includes the conjecture's x>=5 range. If empty subfamilies are permitted,
+the answer is instead (23x^2+81x+18)/2: every generator is nonempty, so exactly one
+new member, the empty set, is added. The source's listed numerical examples use
+the nonempty convention, although its written closure definition does not impose
+that restriction. We make no claim that these two conventions are identical.
+
+The completion is forced if the other printed rows and the source's assertion
+that every coordinate occurs in n/2+1 rows are retained. Indeed, fix a coordinate
+t. Sum its indicator over all specified rows. There is just one unknown indicator,
+that of S_(2q+1). Subtracting from 2q+1 determines this indicator uniquely. Direct
+summation for the displayed completion gives exactly 2q+1 in every column, so it
+is the unique possible row. This assertion and the required column summation are
+proved in LuRazSubmission.omitted_row_forced and LuRazParametric.exact_frequencies.
+It does not assert that the authors have confirmed an erratum. Our statement also
+applies to ANY completion satisfying these printed row and frequency conditions;
+see LuRazSubmission.every_balanced_completion_count.
+
+2. Generator notation
+
+Split each set into its core, its intersection with {1,2,3,4}, and its tail in [5,n].
+Use the following names for the fixed generators. A name used in a tail formula
+means its tail only; its core is always as specified here.
+
+ name   core          tail
+ Top    {1,2,3,4}     [5,n]
+ A      {1}           [5,q+2]
+ B      {}            [r+1,n]
+ C      {3}           [5,h+2] union {r}
+ D      {2}           [h+1,n]
+ E      {1,3}         [h+3,n]
+ Z      {1,3,4}       [5,h] union {n}
+ K1     {2,4}         [h+2,n-2]
+ K2     {2,4}         [h+3,n-1]
+
+Define g(a)=h+a-3 for a<=q+3, and g(a)=h+a-4 for a>=q+4.
+The J_a generators have core {1,4} and tail [a,g(a)], 5<=a<=h+1.
+Let P=[4,h+1] minus {q+2}. Define beta(p)=h+p when p<=q+1, and
+beta(p)=h+p-1 when p>=q+3. The L_p generators have core {2,3}; their tails are
+[5,p] union [beta(p),n], with the single exception M=L_e0, whose tail is
+[5,e0] union [r+1,n-1]. In particular, M does not contain n.
+The function beta is a strictly increasing bijection P -> [h+4,n].
+
+These are exactly the source rows: Top=S_0, A=S_(n+2), B=S_(n+1), C=S_n,
+D=S_1, E=S_4, Z=S_2, K1=S_(h+1), K2=S_(h+2), J_5=S_3,
+J_a=S_(a-1) otherwise, and L_p=S_(beta(p)-1). There are
+1+6+2+2m=n+3 rows. No generator is omitted from this notation.
+
+3. Interval reduction lemmas
+
+For a nonempty collection of J generators, its tail is one interval [a,b], with
+ 5<=a<=h+1, h+2<=b<=n-3, g(a)<=b.                         (J)
+Conversely every such interval occurs. All J intervals contain h+1; their union
+therefore has its least left endpoint and greatest right endpoint as endpoints.
+The map g is nondecreasing and maps onto [h+2,n-3]. Given g(c)=b, either c>=a,
+when J_a union J_c realizes the interval, or c<a, when monotonicity forces b=g(a)
+and the single generator J_a suffices.
+
+For nonempty L unions, let t and p be the least and greatest selected parameters.
+The tail is [5,p] union [beta(t),n], with t,p in P and t<=p, except for t=p=e0,
+which gives M. Every pair occurs by taking L_t union L_p. Strict monotonicity of
+beta and the separated prefix/suffix recover t,p, so there are T(m)=m(m+1)/2
+such tails, including the exceptional M.
+
+A key inequality is
+ p+2<=a ==> beta(p)<=g(a)+1,                               (G)
+for p in P and 5<=a<=h+1. If p<=q+1 and a<=q+3, this is h+p<=h+a-2.
+If p<=q+1 and a>=q+4, g(a)+1>=3q+1>=beta(p). If p>=q+3, a>=p+2>=q+5,
+and g(a)+1=h+a-3>=h+p-1=beta(p). Thus a J interval and an L tail cannot retain
+both a left gap and a right gap. The missing final point of M must still be kept.
+Adding A or B fills gaps and never creates new ones.
+
+Union only adds core coordinates. The generators containing 4 also contain 1 or 2,
+so cores {4} and {3,4} never occur. We count the other fourteen cores below.
+
+4. The six small cores
+
+Their complete tail lists are:
+ {}: B;
+ {1}: A, A union B;
+ {2}: D;
+ {1,2}: A union D;
+ {3}: C, C union B;
+ {1,3}: E, A union E, [5,n], C, C union B.
+Here the tail C in the last line is realized by A union C. Inspection of the
+allowed core-subsets, using B subset D,E, A subset C, and C union E=[5,n], proves
+coverage. The endpoints and isolated points distinguish the entries. Their counts
+are respectively 1,2,1,1,2,5. These statements are proved in LuRazSmallResults.
+
+5. Core {2,3}
+
+The allowed generators are B,C,D,L. The complete, disjoint groups of tails are:
+ (i) all T(m) L-union tails above;
+ (ii) [5,e0] union [r+1,n], one tail;
+ (iii) [5,p] union D for p in P, p<=h-1, together with [5,n], m-1 tails;
+ (iv) [5,h+2] union {r} union [beta(t),n], t in P except e0, m-1 tails;
+ (v) [5,h+2] union [r,n-1], one tail.
+They are realized by L_t union L_p; M union B; D union L_p and C union D;
+C union L_t; and C union M, respectively.
+For coverage, adding B to an L union only creates (ii) when M was alone; all other
+changes are already ordinary L unions with adjusted minimum parameter. Adding D
+gives (iii), and adding C gives (iv) or (v). The beta values at q+1 and e0 become
+the same after adding r, explaining the deletion of e0. With no L, cores force
+C and D, giving the full tail. Prefix endpoints, suffix starts, and the point n
+distinguish all groups. The count is T(m)+2m=2q^2-q-3.
+
+6. Core {1,2,3}
+
+Allowed generators are A,B,C,D,E,L. Apply optional A and E to all tails in section 5.
+This covers the class: combinations using E and D without C or L have the same
+tail as D union L_4 before adding E; combinations with neither C nor L must use E,D.
+Adding A to (i) replaces p by max(p,q+2). The low triangular block collapses to
+q-2 values of t, giving T(m)-T(q-2)+(q-2) tails, still with M exceptional.
+Group (ii) contributes one; D-type tails contribute q-1; C-type tails contribute m.
+These are disjoint, totalling (3q^2+q-6)/2.
+Adding E creates exactly [5,p] union [h+3,n], for p in P union {q+2}, a total m+1,
+and the as-yet unlisted D-type tails with p=4,...,q+1, a total q-2. All C-type
+tails become full. Distinct prefix and suffix endpoints distinguish these groups.
+The total is (3q^2+7q-14)/2. See LuRazCore123Results for the formal enumeration.
+
+7. Core {1,4}
+
+Only A,B,J are allowed and at least one J is required. Subject to (J), the six
+disjoint groups are:
+ [a,b]                                      2(q-1)(q-2)
+ A union [a,b], a>=q+4                       T(q-2)
+ [a,b] union B, b<=3q                        T(q-1)+1
+ [a,n], 5<=a<=h+1                           2q-3
+ A union [q+4,3q] union B                    1
+ A union [a,n], q+4<=a<=h+1                  q-2.
+Adding A either merges the left endpoint to 5 or retains a left gap. Adding B
+either merges the right endpoint to n or retains a right gap. Both gaps can
+remain only when a=q+4,b=3q. The largest J endpoint n-3 is at least r because q>=4,
+so the merged-suffix forms are all attainable. For the first group, summing the
+available b values in the two ranges of a gives 2(q-1)(q-2); the next two sums are
+the displayed triangular counts. Gap endpoints and membership of n distinguish
+the six groups. Their sum is 3q^2-5q+2.
+
+8. Cores {2,4} and {1,2,4}
+
+For {2,4}, the allowed generators B,D,K yield exactly
+ [h+2,n-2], [h+3,n-1], [h+2,n-1], [h+2,n], [h+3,n], D.
+The last tail is obtained with D and at least one K. These six tails are distinct.
+For {1,2,4}, if J is used, it joins K or D and gives
+ [a,t], 5<=a<=h+1, t in {n-2,n-1,n};
+ A union [a,t], q+4<=a<=h+1, t in {n-2,n-1,n}.
+The endpoints t are realized using K1,K2,K1 union B. If no J is used, A is required;
+adding it to the six preceding K/D tails gives five new tails, since A union D
+already occurs with a=h+1,t=n in the second group. Distinct left-gap endpoints and
+right endpoints give uniqueness. The count is 3(2q-3)+3(q-2)+5=9q-10.
+
+9. Core {1,3,4}
+
+Allowed generators are A,B,C,E,J,Z. Write Q=[h+2,n-3]. The disjoint groups are
+ [a,n], 5<=a<=h+1                            2q-3
+ A union [a,n], q+4<=a<=h+1                  q-2
+ [5,b] union {r}, b in Q except r-1          2q-5
+ [5,b] union {n}, b in Q                     2q-4
+ [5,b] union {r,n}, h+2<=b<=r-2              q-2
+ [5,b] union B, h+2<=b<=r-1                  q-1
+ [5,b] union [r,n], h+2<=b<=r-2              q-2
+ Z, Z union B, Z union E                     3.
+With J and E the suffix reaches n, giving the first two groups. With C or Z, the
+J interval joins the existing prefix, leaving only b. In the C case b=r-1 and b=r
+give the same set, so delete r-1. Adding Z or B gives precisely the next groups;
+larger endpoints merge to full tails already listed. With no J, Z is forced and
+the remaining options reduce to the last group or previously listed tails.
+For attainability choose J unions [5,b] via (J) and add C,Z,B as indicated; the
+first two groups use E union J_a, optionally A. The position of n, isolated r,
+and consecutive-block endpoints distinguish the groups. The sum is 10q-16.
+
+10. Core {2,3,4}
+
+Allowed generators are B,C,D,K,L; at least one K is needed, along with C or L.
+The complete disjoint tail groups are
+ [5,p] union [t,n], p in P, t in {h+2,h+3}     2m
+ [5,p] union D, p in P, p<=h-1                 m-2
+ [5,e0] union [t,n-1], t in {h+2,h+3}          2
+ [5,n-2], [5,n-1]                             2
+ [5,n-2] union {n}                            1.
+K joins the suffix of ordinary L; for M add B when the target includes n. With
+p=h+1 and K1, the isolated missing point n-1 gives the last group; adding L_h
+fills it without extending the prefix. D gives the second group or a previously
+listed full tail. C joins K and gives the two long intervals, or the last group
+if n is also supplied. These arguments give coverage and witnesses. Prefix and
+suffix endpoints, membership of n, and the isolated last gap distinguish the
+groups. Their sum is 2m+(m-2)+2+2+1=6q-6.
+
+11. The full core {1,2,3,4}
+
+Partition by membership of n,h+1,h+2 and by whether the left prefix has a gap.
+This partition is disjoint before any counting.
+
+(a) n absent. The possible tails and counts are
+ [5,n-2], [5,n-1]                                     2
+ [5,b] union [r+1,n-1], h+2<=b<=r-1                    q-1
+ [5,e0] union [a,n-1], q+5<=a<=h+1                     q-3
+ [5,e0] union [t,n-1], t in {h+2,h+3}                  2
+ [5,b] union [r,n-1], h+2<=b<=r-2                      q-2.
+Only A,C,J,K,M are allowed. With no M, the core requires C,K, giving the first
+line. With M but no C, (G) allows a left gap or right gap, giving the second/third
+lines or [5,n-1]; using K without J gives the fourth. With C and M, r joins the
+suffix and the last line remains, or the full interval. J unions [5,b] supply
+the adjustable endpoints. The total is 3q-2.
+
+(b) n present, h+1 absent. The tails are
+ [5,p] union [t,n], 4<=p<=h, t in {h+2,h+3}            4q-6
+ [5,h] union [a,n], h+4<=a<=n-1                        2q-4
+ [5,h] union [h+2,n-2] union {n}                       1.
+Top,C,D,J,L_(h+1) are excluded. With K, the suffix starts h+2 or h+3, except for
+the last missing-n-1 case Z union K1. All prefix endpoints 4,...,h are available
+from P plus A's endpoint q+2, and E provides core 1,3 when needed. Without K,
+the core requires Z and L, forcing the second group. Their count is 6q-9.
+
+(c) n,h+1 present, h+2 absent. Only L_(h+1) supplies h+1 without h+2, so the
+prefix is [5,h+1]. The tails are [5,h+1] union [a,n], h+3<=a<=n, count 2q-2.
+Use Z union L_(h+1) for core 4 and adjust the suffix using L; use E for a=h+3.
+
+(d) n,h+1,h+2 present, 5 absent. A,C,Z and L_p for p>=5 are excluded. To supply
+core 3 one needs E or L_4. If J is used, its interval joins that suffix; otherwise
+D supplies h+1. The tails are exactly [a,n], 6<=a<=h+1, count 2q-4, attained by
+J_a union L_4.
+
+(e) n,h+1,h+2,5 present, but [5,h+2] not full. C and Z are impossible. By (G),
+a surviving left gap forces all pieces to its right to join. If no L is used,
+E supplies core 3 and gives the same result; without J, D supplies h+1 unless
+L_(h+1) has already filled the prefix. Thus the tails are precisely
+ [5,p] union [a,n], 5<=p<=h-1, p+2<=a<=h+1.
+For p in P take L_p union J(a,n-3) union B, where J(a,n-3) denotes an attainable
+J union from (J). If p=q+2 take A union L_(q+1) union J(a,n-3) union B instead.
+Including B is harmless and fills n in the exceptional p=e0 case. Omitting B
+there would give an invalid witness; the present proof and Lean code include it.
+The gap recovers both parameters. Summing h-p choices over p=5,...,h-1 gives
+(h-5)(h-4)/2=(2q-5)(q-2).
+
+(f) n and the full prefix [5,h+2] present. The tails are
+ [5,n]                                                            1
+ [5,b] union [c,n], h+2<=b<=n-2, b+2<=c<=n                         (2q-3)(q-1)
+ [5,b] union {r} union [c,n], h+2<=b<=r-2, r+2<=c<=n               (q-2)^2.
+Each J or K interval joins the existing prefix, so these intervals only extend
+its endpoint. All remaining non-isolated pieces join a suffix ending at n; if
+M is selected, its n-1 endpoint joins the already present n. The only possible
+additional isolated point is C's r. Merge adjacent pieces to obtain exactly the
+three listed normal forms. Top attains the first. For the second, b<=n-3 is
+attained by J(5,b) and the L whose suffix starts at c; add B only if that L is M.
+For b=n-2 the required c=n is attained using J_5,K1,L_(h+1). The third is attained
+with C,J(5,b),L_p where beta(p)=c; here c>=r+2 excludes M. Gaps and isolated r
+distinguish the forms and recover endpoints. The second count is T(2q-3), and
+the last count is (q-2)^2.
+
+The full-core count, summing (a)--(f), is
+ (3q-2)+(6q-9)+(2q-2)+(2q-4)+(2q-5)(q-2)
+ +1+(2q-3)(q-1)+(q-2)^2 = 5q^2-5q+1.
+LuRazFullJL proves the general four-endpoint J/L reduction. LuRazFullFixed proves
+closure of the fourteen full-core standard forms under all eight fixed non-Top
+generators. LuRazFullRawParts reduces arbitrary source selections to optional J,
+optional L and fixed flags. FullCoverage, FullExact, FullUnique, FullEnumeration
+and FullCount verify respectively coverage, attainability, uniqueness, enumeration
+and count. Thus arbitrary-length source selections, not just pairs, are covered.
+
+12. Sum over cores and connection to actual sets
+
+ core             count
+ {}               1
+ {1}              2
+ {2}              1
+ {1,2}            1
+ {3}              2
+ {1,3}            5
+ {2,3}            2q^2-q-3
+ {1,2,3}          (3q^2+7q-14)/2
+ {1,4}            3q^2-5q+2
+ {2,4}            6
+ {1,2,4}          9q-10
+ {1,3,4}          10q-16
+ {2,3,4}          6q-6
+ {1,2,3,4}        5q^2-5q+1.
+
+Different cores are disjoint. Each listed tail is attained, every generated tail
+is listed, and each list has distinct members. The sum is (23q^2+35q-42)/2.
+Substitute q=x+1 and n=4q to obtain (1).
+
+In Lean, source elements are ordinary predicates on Fin(4q), and all row indices
+are Fin(4q+3). LuRazFiniteClosure transfers the tail classification to these sets
+and proves injectivity on supported predicates. The main theorem gives a Nodup
+list with membership equivalent to being generated from the original source and
+the stated length. LuRazSubmission.nonempty_subfamily_iff proves equivalence with
+arbitrary nonempty predicate-selected subfamilies; this is not a bounded-list
+restriction or an unproved identification with encoded sets. This completes the
+proof of the precisely stated mathematical result.
+
+13. Scope and verification
+
+The theorem proves no claim of global minimality or Frankl's original conjecture.
+It does not establish original-contributor priority or the acceptance of a prize
+problem. The formal proof uses Lean 4.35.0 and bundled Std, without Mathlib.
+Proof declarations are audited for transitive axioms, and the permitted standard
+axioms are propext, Classical.choice and Quot.sound. See the reproduction report
+for the actual build, axiom audit, kernel-replay level and finite cross-checks.
+Finite checks support error detection and do not replace any parameter theorem.

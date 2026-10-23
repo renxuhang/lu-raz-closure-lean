@@ -1,0 +1,102 @@
+Statement correspondence and source clarification
+22 October 2026
+
+Source: Kengbo Lu and Abigail Raz, Note on the union-closed sets conjecture and
+Reimer's average set size theorem, arXiv:2405.10639v2 (30 May 2024), Sections 3--5.
+https://arxiv.org/html/2405.10639v2
+Matching problem reference, not an approved prize mapping:
+https://mathdb.com/p/363119/the-quadratic-union-closure-conjecture-for-the-constructed-f
+
+Verdict
+The proof establishes the conjectured polynomial for a precisely completed source
+family and nonempty-subfamily closure. The completed row is uniquely forced by
+the other printed rows and the printed uniform-frequency assertion. Literal
+empty-subfamily closure has one extra member. Author confirmation and acceptance
+of the clarified formulation by mathematical/prize reviewers remain external
+questions; neither is an axiom used by the unconditional explicit-family theorem.
+
+Parameters and coordinates
+The source uses x>=5 in Conjecture 3, n=4x+4. The main theorem proves every natural
+x>=3. In Lean q=x+1 and the ground set is Fin(4q); coordinate v means v.val+1 in
+the paper's one-based [n]. Row indices are Fin(4q+3), whose values are 0,...,n+2.
+No upper bound on x, the number of selected rows, or endpoint values is assumed.
+
+Row-by-row comparison
+The row cases below are proved in LuRazParametric.lean. Each case is an iff with
+the corresponding displayed row, in one-based coordinates:
+ source index/range                      Lean lemma
+ 0                                       row_case_0
+ 1                                       row_case_1
+ 2                                       row_case_2
+ 3                                       row_case_3
+ 4                                       row_case_4
+ 5,...,q+2                               row_case_5
+ q+3,...,2q                              row_case_6
+ 2q+1, omitted in the printed table       row_case_7 (explicit completion)
+ 2q+2                                    row_case_8
+ 2q+3                                    row_case_9
+ 2q+4,...,3q                             row_case_10
+ 3q+1                                    row_case_11
+ 3q+2,...,4q-1                           row_case_12
+ 4q                                      row_case_13
+ 4q+1                                    row_case_14
+ 4q+2                                    row_case_15
+The index ranges partition all n+3 indices. The exceptional row at 3q+1 ends its
+suffix at n-1; that exception is retained, rather than replaced by an ordinary L.
+
+The missing row
+The explicit completion is {2,4} union [2q+2,4q-2].
+LuRazParametric.exact_frequencies proves its source has exactly 2q+1 occurrences
+of every element. LuRazSubmission.sumTo_difference_at_one cancels all unchanged
+indicators between two proposed families. Consequently omitted_row_forced and
+balanced_completion_unique prove uniqueness of the missing row if the remaining
+printed rows and the stated frequency are retained. The result is stronger than
+agreement at finitely many x and weaker than an assertion about author intent.
+The original OneDrive generator/closure links could not be read in this session;
+we do not claim to have compared this definition with the authors' code.
+
+Mathematical family properties
+LuRazParametric.completed_for_every_x proves, for all x>=2: complete Reimer
+conditions on ordinary subset predicates, nontriviality, frequency 2x+3 for each
+element, absence of an abundant element, failure of union closure, all row sizes
+at least x and attainment of size x. S_injective proves the rows are distinct.
+Thus the parameter x is actually the minimum set size used in the paper.
+
+Closure semantics
+LuRazClosure.FinGenerated uses arbitrary nonempty lists of row indices, not a
+fixed list-length bound. Duplication of a row does not affect the resulting union.
+LuRazSubmission.nonempty_subfamily_iff proves equivalence with arbitrary predicate
+selections of nonempty subfamilies of the finite row set. This establishes the
+ordinary set-family meaning without assuming a coding-to-sets correspondence.
+LuRazFiniteClosure transfers the unbounded natural-coordinate classification to
+Fin(4q), proving injectivity for supported predicates and exact membership.
+
+The two closure conventions
+The displayed source definition permits an arbitrary subfamily, with no written
+nonemptiness condition. Its reported counts x=2,3,4 are 133,233,354. For our
+completion these are nonempty-subfamily counts; including the empty subfamily
+instead gives 134,234,355. All source rows are nonempty by source_row_nonempty,
+so empty_not_generated excludes the empty set from the nonempty closure.
+subfamily_union_iff and including_empty_count formally prove the exact +1 change.
+We do not relabel this convention discrepancy as a new mathematical refutation.
+
+Counting endpoints
+LuRazClosure.closure_cardinality_for_every_x:
+ all natural x>=3, nonempty closure count (23x*x+81x+16)/2.
+LuRazSubmission.nonempty_count_in_paper_range:
+ all natural x>=5, the same result with arbitrary nonempty-subfamily semantics.
+LuRazSubmission.nonempty_count_n_scaled:
+ 32*count=23*n*n+140*n-672, n=4q. Dividing by 32 gives the printed polynomial.
+LuRazSubmission.including_empty_count:
+ all natural x>=3, arbitrary-subfamily count (23x*x+81x+18)/2.
+LuRazSubmission.every_balanced_completion_count:
+ the nonempty formula for every completion preserving all printed rows and the
+ stated equal frequencies; the completion is not postulated to equal our row.
+
+Evidence and scope exclusions
+The Nodup enumeration proves both directions of membership and its exact length.
+All fourteen possible cores are covered. The other two core bit patterns are
+proved impossible. This is a universal theorem, not interpolation of finite data.
+It proves neither global minimality nor Frankl's original union-closed conjecture.
+It makes no claim of prize eligibility, first-public priority or official review.
+The corresponding mathematical argument is supplied in PROOF.txt.
