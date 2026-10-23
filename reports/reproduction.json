@@ -1,0 +1,2964 @@
+{
+  "success": true,
+  "verified_utc": "2026-10-22T09:19:35.484408+00:00",
+  "lean_version": "info: lu-raz-closure-lemmas: no previous manifest, creating one from scratch\ninfo: toolchain not updated; already up-to-date\nLean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "source_files_verified": 91,
+  "project_build_cache_existed_before": false,
+  "audited_declarations": 605,
+  "axiom_closures": {
+    "LuRazClosure.g_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.g_monotone": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.g_surjective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.beta_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.beta_strict": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.beta_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_is_source_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.L_is_source_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.no_two_gaps": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.two_intervals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_join_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_pair_attains": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.scale_square": [
+      "propext"
+    ],
+    "LuRazClosure.fourteen_counts_sum": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.class15_partition_arithmetic": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.x_substitution": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.n_substitution": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_0": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_3": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_4": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_6": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_7": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_8": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_9": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_10": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_11": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_12": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_13": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_14": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_case_15": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.coatom_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_in_filter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.coatoms_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.first_double_hole_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.second_double_hole_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazFollowup.intervals_disjoint_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazFollowup.coatom_intervals_disjoint_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazFollowup.top_preimage_is_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazFollowup.two_hole_superset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimer.all_subsets_represented": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimer.smallSet_ext": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimer.subset_trans": [
+      "propext"
+    ],
+    "RazReimer.intervalsDisjoint_of_pairSeparated": [
+      "propext"
+    ],
+    "RazReimer.F_upwardClosed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimer.A_subset_F": [
+      "propext"
+    ],
+    "RazReimer.separated": [
+      "propext"
+    ],
+    "RazReimer.condition": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimer.frequencies": [
+      "propext"
+    ],
+    "RazReimer.no_abundant_element": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimer.not_reimerStrengthening": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimer.A_not_unionClosed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimer.counterexample": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.decode_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.every_predicate_represented": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.condition_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.condition_reflection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.condition_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.frequency_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.A_nontrivial": [
+      "propext"
+    ],
+    "RazReimerPredicates.A_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.A_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.A_frequencies": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.A_not_unionClosed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimerPredicates.not_strengthening": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.listUnion_cons": [
+      "propext"
+    ],
+    "LuRazClosure.JReachable_join": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_single_reachable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_list_normal_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_normal_form_attainable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.L_single_normal": [
+      "propext"
+    ],
+    "LuRazClosure.P_min": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.P_max": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.L_join_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.L_list_normal_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.L_normal_form_attainable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.list_nonempty_witness": [
+      "propext"
+    ],
+    "LuRazClosure.listUnion_fixed_core": [
+      "propext"
+    ],
+    "LuRazClosure.J_source_list_normal_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.L_source_list_normal_form": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_source_attainable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.L_source_attainable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.L_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.A_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.B_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.listUnion_append": [
+      "propext"
+    ],
+    "LuRazClosure.generated_row": [
+      "propext"
+    ],
+    "LuRazClosure.generated_join": [
+      "propext"
+    ],
+    "LuRazClosure.generated_optional": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_A": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_B": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_J": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_excluding_two_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.JRow_join": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.restricted14_list": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_core14_mixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mixed14_generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mixed14_core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_prefix_reachable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_max_reachable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.J_double_reachable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mixed14_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF14.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF14.core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core14_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF14.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.range_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.nodup_map_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.nodup_map_on": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.nodup_flatMap_separated": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.pairs_split": [
+      "propext"
+    ],
+    "LuRazEnumeration.pairs_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.pairs_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.int_length_flatMap": [
+      "propext"
+    ],
+    "LuRazEnumeration.twice_sum_linear": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.pairs_length_linear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.triangular_pairs_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazEnumeration.pairs_length_constant": [
+      "propext"
+    ],
+    "LuRazClosure.NF14.tag_lt": [
+      "propext"
+    ],
+    "LuRazClosure.enum14Group_tag": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14Group_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF14.valid_mem_group": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14Group_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.scalar_middle2": [
+      "propext"
+    ],
+    "LuRazClosure.scalar_middle3": [
+      "propext"
+    ],
+    "LuRazClosure.scalar_middle4": [
+      "propext"
+    ],
+    "LuRazClosure.early_pairs_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.late_pairs_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_base_split": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_base_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_agap_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_bgap_split": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_bgap_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_joined_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_ajoined_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum14_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core14_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core14_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core14_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core14_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.C_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.D_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.LRow_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_D": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_L": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.LRow_join": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_excluding_one_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.restricted23_list": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_core23_mixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mixed23_generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mixed23_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF23.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF23.core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core23_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF23.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.twoPiece_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.twoPiece_high": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.twoPiece_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.beta_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.beta_exception": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.end23_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.lp_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.lp_ne_filled": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.cShape_high": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.cShape_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.creg_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.rankP_strict": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.rankP_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.rankP_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.rankP_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.rankP_surjective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.rankP_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.rankP_exception": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumP_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumP_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumP_low_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.filter_ne_absent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.filter_ne_length": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF23.tag_lt": [
+      "propext"
+    ],
+    "LuRazClosure.enum23Group_tag": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum23Group_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF23.valid_mem_group": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum23_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum23Group_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum23_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum23_lp_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum23_dgap_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum23_creg_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum23_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core23_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core23_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core23_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core23_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_supported": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_supported": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.lift_supported": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.restrict_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.lift_restrict": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.restrict_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_to_fin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_to_generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_fin_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_lift_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.transfer_enumeration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.lift_at": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_core14_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_core23_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core14_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core23_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.two_quadratic_classes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.variant_avoiding_coordinate": [
+      "propext"
+    ],
+    "LuRazClosure.variant_core14_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.variant_core23_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.variant_core14_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.variant_core23_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.E_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_E": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_fixed_small": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_mix_of_generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.coreSmallAt_congr": [
+      "propext"
+    ],
+    "LuRazClosure.coreSmallAt_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.coreSmallAt_small": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFSmall.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFSmall.core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFSmall.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.allSmall_mem": [
+      "propext"
+    ],
+    "LuRazClosure.enumSmall_exact": [
+      "propext"
+    ],
+    "LuRazClosure.enumSmall_nodup": [
+      "propext"
+    ],
+    "LuRazClosure.enumSmall_length": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_small_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.K1_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.K2_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_K1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_K2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_fixed24": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core24_mix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mix24_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF24.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF24.core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core24_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF24.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.all24_mem": [
+      "propext"
+    ],
+    "LuRazClosure.members24_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.members24_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core24_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_core24_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core24_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_excluding_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.restricted124_list": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core124_parts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mixed124_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.t124_left_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.a24_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_t124": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF124.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF124.core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core124_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.a_disjoint24": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.nf24_no_middle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF124.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF124.tag_lt": [
+      "propext"
+    ],
+    "LuRazClosure.ak124_exact": [
+      "propext"
+    ],
+    "LuRazClosure.enum124Group_tag": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum124Group_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF124.valid_mem_group": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum124_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum124Group_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum124_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum124_length": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core124_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core124_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core124_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_core124_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core124_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core124_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_excluding_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.restricted234_list": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core234_parts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mixed234_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fixed234_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF234.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF234.core": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core234_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF234.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF234.tag_lt": [
+      "propext"
+    ],
+    "LuRazClosure.enum234Group_tag": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum234Group_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF234.valid_mem_group": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum234_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum234Group_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum234_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum234_length": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core234_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core234_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core234_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_core234_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core234_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core234_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_excluding_four": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.restricted123_list": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core123_image": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.image123_generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.a_image123_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.e_image123_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.image123_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF123.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF123.body_no_one": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF123.core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core123_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF123.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF123.tag_lt": [
+      "propext"
+    ],
+    "LuRazClosure.enum123Group_tag": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum123Group_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF123.valid_mem_group": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum123_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum123Group_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum123_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum123_high_length": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum123_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core123_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core123_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core123_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_core123_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core123_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core123_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.Z_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_Z": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_excluding_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.restricted134_list": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core134_parts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.mixed134_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fixed134_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.j134_from_five": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF134.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF134.core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core134_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF134.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF134.tag_lt": [
+      "propext"
+    ],
+    "LuRazClosure.enum134Group_tag": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum134Group_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NF134.valid_mem_group": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum134_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum134Group_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum134_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum134_cj_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enum134_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core134_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core134_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core134_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_core134_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core134_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core134_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_four_implies_one_or_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_four_implies_one_or_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.partialCodes_iff_not_full": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.small_core_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core23_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core123_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core14_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core24_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core124_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core134_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.core234_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.partialGroup_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.partialGroup_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.partialMembers_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.partialMembers_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.partialMembers_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.nonfull_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fin_coreFull_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.nonfull_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.nonfull_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.nonTop_one_excludes_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_closure_split": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_closure_split_enumerated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_pair_code": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_closure_nine_cases": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.d134_full_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.a234_full_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.lp_j_full_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.addA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.addB": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.addC": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.addD": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.addE": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.addZ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.addK1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.addK2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_normalizes_optional": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_normalizes_fixedAug": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.pair23_14_full_normal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.KRow_zero": [
+      "propext"
+    ],
+    "LuRazClosure.KRow_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.pick_K": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.l_z_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.l_k_e_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.l_k_a_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.j_k_c_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.j_k_z_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.j_k_e_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.k_z_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.k_e_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.k_c_a_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.d_z_full_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.ARow_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedAug.memA": [
+      "propext"
+    ],
+    "LuRazClosure.BRow_low": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedAug.memB": [
+      "propext"
+    ],
+    "LuRazClosure.CRow_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedAug.memC": [
+      "propext"
+    ],
+    "LuRazClosure.DRow_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedAug.memD": [
+      "propext"
+    ],
+    "LuRazClosure.ERow_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedAug.memE": [
+      "propext"
+    ],
+    "LuRazClosure.ZRow_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedAug.memZ": [
+      "propext"
+    ],
+    "LuRazClosure.K1Row_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedAug.memK1": [
+      "propext"
+    ],
+    "LuRazClosure.K2Row_low": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedAug.memK2": [
+      "propext"
+    ],
+    "LuRazClosure.FixedAug.memPickedK": [
+      "propext"
+    ],
+    "LuRazClosure.fixedAug_core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_normalizes_from_seed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_normalizes_fixed_only": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_normalizes_lfixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_normalizes_jfixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.FixedGen.source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.row_nonTop_parts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.jPart_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.lPart_add": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.raw_parts_list": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.fixedBag_explicit": [
+      "propext"
+    ],
+    "LuRazClosure.rawFull_explicit": [
+      "propext"
+    ],
+    "LuRazClosure.raw_full_normalizes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_closure_normalizes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.generated_KRow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.core": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_closure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.tag_lt": [
+      "propext"
+    ],
+    "LuRazClosure.enumFullGroup_tag": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumFullGroup_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.NFFull.valid_mem_group": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumFull_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumFullGroup_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumFull_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumFull_leftGap_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumFull_rightGap_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumFull_isolated_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazClosure.enumFull_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.full_finite_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.closure_members_nodup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.closure_members_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.closure_members_length": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.closure_finite_cardinality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.closure_finite_doubled_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazClosure.closure_cardinality_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazCounting.mark_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazCounting.mark_and_true": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazCounting.mark_congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazCounting.sumTo_zero": [
+      "propext"
+    ],
+    "LuRazCounting.sumTo_add": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazCounting.sumTo_congr": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazCounting.sumTo_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazCounting.sumTo_singleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazCounting.sumTo_point_and": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_weights_decompose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece0_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece1_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece2_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece3_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece4_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece5_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece6_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece7_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece8_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece9_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece10_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece11_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece12_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece13_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece14_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.piece15_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.frequency_as_columnTotal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_small3": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_small4": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_small5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case0": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case3": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case4": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case6": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case7": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case8": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case9": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case10": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case11": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case12": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case13": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case14": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case15": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case16": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case17": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case18": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.column_case19": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.columnTotal_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazCounting.sumTo_filter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazCounting.finRange_vals": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazCounting.finRange_filter_length": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazParametric.exact_frequencies": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.predicate_frequencies": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.no_abundant_element": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.rowTally_size": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case0": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case3": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case4": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case6": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case7": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case8": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case9": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case10": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case11": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case12": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case13": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case14": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.tally_case15": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.rowTally_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.minimum_size_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.minimum_size_attained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.zero_coatom_sep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.zero_extra1_sep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.zero_extra2_sep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.coatom_coatom_sep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.coatom_first_sep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.coatom_second_sep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.extras_sep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.main_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.nat_separated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.nat_filter_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.S_included_F": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.intervals_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.S_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.F_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.F_top": [
+      "propext"
+    ],
+    "LuRazParametric.F_coatom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.F_holes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.F_upward": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.reimer_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.S_nontrivial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.row_one_last_implies_three": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.not_union_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.completed_construction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazParametric.completed_for_every_x": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.nonempty_witness": [
+      "propext"
+    ],
+    "LuRazSubmission.sumTo_difference_at_one": [
+      "propext",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.omitted_row_forced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.balanced_completion_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.nonempty_subfamily_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.subfamily_union_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.source_row_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.empty_not_generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.nonempty_count_in_paper_range": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.including_empty_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.nonempty_count_n_scaled": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LuRazSubmission.every_balanced_completion_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RazReimer.correspondence_bijective": [],
+    "RazReimer.A_injective": [],
+    "RazReimer.F_injective": [],
+    "RazReimerPredicates.shared_index_bijective": [],
+    "LuRazClosure.listUnion_congr": [],
+    "LuRazClosure.generated_congr": [],
+    "LuRazClosure.enum14_double_count": [],
+    "LuRazClosure.enum23_filled_count": [],
+    "LuRazClosure.enum23_full_count": [],
+    "LuRazClosure.enum23_exception_count": [],
+    "LuRazClosure.small_guard": [],
+    "LuRazClosure.allSmall_nodup": [],
+    "LuRazClosure.all24_nodup": [],
+    "LuRazClosure.full_normalizes_congr": [],
+    "LuRazClosure.fixedBag_update": [],
+    "LuRazParametric.NatSeparated.symm": []
+  },
+  "kernel_replayed_local_modules": 79,
+  "kernel_replayed_module_names": [
+    "LuRazCore14",
+    "LuRazGenerated",
+    "LuRazVariableUnions",
+    "RazReimerPredicates",
+    "RazReimer",
+    "LuRazFollowup",
+    "LuRazParametric",
+    "LuRazClosureLemmas",
+    "LuRazCore23Normal",
+    "LuRazCore23",
+    "LuRazCore14Results",
+    "LuRazCore14Count",
+    "LuRazCore14Enumeration",
+    "EnumerationCounting",
+    "LuRazCore14Unique",
+    "LuRazCore14Normal",
+    "LuRazCompletionRobustness",
+    "LuRazMixedResults",
+    "LuRazFiniteClosure",
+    "LuRazCore23Results",
+    "LuRazCore23Enumeration",
+    "LuRazPEnumeration",
+    "LuRazCore23Recovery",
+    "LuRazCore23Unique",
+    "LuRazCore124Normal",
+    "LuRazCore124",
+    "LuRazCore24Results",
+    "LuRazCore24",
+    "LuRazSmallResults",
+    "LuRazSmallUnique",
+    "LuRazSmallNormal",
+    "LuRazSmallBase",
+    "LuRazCore234Enumeration",
+    "LuRazCore234Unique",
+    "LuRazCore234Exact",
+    "LuRazCore234Normal",
+    "LuRazCore234",
+    "LuRazCore124Results",
+    "LuRazCore124Enumeration",
+    "LuRazCore124Unique",
+    "LuRazCore123Results",
+    "LuRazCore123Count",
+    "LuRazCore123Enumeration",
+    "LuRazCore123Unique",
+    "LuRazCore123Exact",
+    "LuRazCore123Normal",
+    "LuRazCore123",
+    "LuRazCore234Results",
+    "LuRazNonFullResults",
+    "LuRazNonFullClosure",
+    "LuRazCore134Results",
+    "LuRazCore134Enumeration",
+    "LuRazCore134Unique",
+    "LuRazCore134Exact",
+    "LuRazCore134Normal",
+    "LuRazCore134",
+    "LuRazFullRawParts",
+    "LuRazFullGuarded",
+    "LuRazFullSeeds",
+    "LuRazFullAugment",
+    "LuRazFullFixed",
+    "LuRazFullJL",
+    "LuRazFullNormal",
+    "LuRazFullReduction",
+    "LuRazFrequencyBase",
+    "RangeCounting",
+    "LuRazTotalClosure",
+    "LuRazFullCount",
+    "LuRazFullEnumeration",
+    "LuRazFullUnique",
+    "LuRazFullExact",
+    "LuRazFullCoverage",
+    "LuRazSubmissionBridge",
+    "LuRazResults",
+    "LuRazStructure",
+    "LuRazSizes",
+    "LuRazFrequency",
+    "FrequencyBridge",
+    "ColumnTotalCases"
+  ],
+  "kernel_replay_implementation": "bundled Lean 4.35.0 kernel; imported Std artifacts trusted",
+  "second_independent_kernel_implementation": false,
+  "external_human_mathematical_review": false,
+  "nonempty_count_all_natural_x_ge_3": "(23*x*x+81*x+16)/2",
+  "including_empty_count_all_natural_x_ge_3": "(23*x*x+81*x+18)/2",
+  "main_entrypoint": "LuRazClosure.closure_cardinality_for_every_x",
+  "statement_entrypoints": [
+    "LuRazSubmission.nonempty_witness",
+    "LuRazSubmission.sumTo_difference_at_one",
+    "LuRazSubmission.omitted_row_forced",
+    "LuRazSubmission.balanced_completion_unique",
+    "LuRazSubmission.nonempty_subfamily_iff",
+    "LuRazSubmission.subfamily_union_iff",
+    "LuRazSubmission.source_row_nonempty",
+    "LuRazSubmission.empty_not_generated",
+    "LuRazSubmission.nonempty_count_in_paper_range",
+    "LuRazSubmission.including_empty_count",
+    "LuRazSubmission.nonempty_count_n_scaled",
+    "LuRazSubmission.every_balanced_completion_count"
+  ],
+  "omitted_row_uniqueness": "proved from the other printed rows and printed uniform frequency",
+  "arbitrary_nonempty_subfamily_correspondence": "proved",
+  "finite_class_comparisons": 70,
+  "finite_source_rows_compared": 499,
+  "finite_complete_closure_comparisons": [
+    {
+      "q": 4,
+      "x": 3,
+      "closure_size": 233,
+      "complete_set_equality": true,
+      "formula_exact": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "closure_size": 498,
+      "complete_set_equality": true,
+      "formula_exact": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "closure_size": 2150,
+      "complete_set_equality": true,
+      "formula_exact": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "closure_size": 13080,
+      "complete_set_equality": true,
+      "formula_exact": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "closure_size": 49704,
+      "complete_set_equality": true,
+      "formula_exact": true
+    }
+  ],
+  "author_erratum_confirmed": false,
+  "global_first_contribution_confirmed": false,
+  "prize_eligibility_confirmed": false,
+  "reward_amount_confirmed": false,
+  "local_path_prefixes_redacted_in_public_log": true,
+  "seconds": 1329.552
+}

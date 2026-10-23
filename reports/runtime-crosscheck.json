@@ -1,0 +1,637 @@
+{
+  "success": true,
+  "scope": "finite independent transcription checks; not a substitute for the universal Lean proof",
+  "class_comparisons": 70,
+  "source_rows_compared": 499,
+  "source_comparisons": [
+    {
+      "q": 4,
+      "x": 3,
+      "rows": 19,
+      "ordered_source_masks_exact": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "rows": 27,
+      "ordered_source_masks_exact": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "rows": 55,
+      "ordered_source_masks_exact": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "rows": 135,
+      "ordered_source_masks_exact": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "rows": 263,
+      "ordered_source_masks_exact": true
+    }
+  ],
+  "totals": [
+    {
+      "q": 4,
+      "x": 3,
+      "closure_size": 233,
+      "complete_set_equality": true,
+      "formula_exact": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "closure_size": 498,
+      "complete_set_equality": true,
+      "formula_exact": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "closure_size": 2150,
+      "complete_set_equality": true,
+      "formula_exact": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "closure_size": 13080,
+      "complete_set_equality": true,
+      "formula_exact": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "closure_size": 49704,
+      "complete_set_equality": true,
+      "formula_exact": true
+    }
+  ],
+  "rows": [
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 0,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 1,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 2,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 3,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 4,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 5,
+      "count": 5,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 9,
+      "count": 30,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 6,
+      "count": 25,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 10,
+      "count": 6,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 11,
+      "count": 26,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 14,
+      "count": 18,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 7,
+      "count": 31,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 13,
+      "count": 24,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 4,
+      "x": 3,
+      "core_bitmask": 15,
+      "count": 61,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 0,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 1,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 2,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 3,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 4,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 5,
+      "count": 5,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 9,
+      "count": 80,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 6,
+      "count": 63,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 10,
+      "count": 6,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 11,
+      "count": 44,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 14,
+      "count": 30,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 7,
+      "count": 68,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 13,
+      "count": 44,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 6,
+      "x": 5,
+      "core_bitmask": 15,
+      "count": 151,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 0,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 1,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 2,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 3,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 4,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 5,
+      "count": 5,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 9,
+      "count": 444,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 6,
+      "count": 322,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 10,
+      "count": 6,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 11,
+      "count": 107,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 14,
+      "count": 72,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 7,
+      "count": 292,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 13,
+      "count": 114,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 13,
+      "x": 12,
+      "core_bitmask": 15,
+      "count": 781,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 0,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 1,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 2,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 3,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 4,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 5,
+      "count": 5,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 9,
+      "count": 3104,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 6,
+      "count": 2142,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 10,
+      "count": 6,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 11,
+      "count": 287,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 14,
+      "count": 192,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 7,
+      "count": 1742,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 13,
+      "count": 314,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 33,
+      "x": 32,
+      "core_bitmask": 15,
+      "count": 5281,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 0,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 1,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 2,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 3,
+      "count": 1,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 4,
+      "count": 2,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 5,
+      "count": 5,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 9,
+      "count": 12352,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 6,
+      "count": 8382,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 10,
+      "count": 6,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 11,
+      "count": 575,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 14,
+      "count": 384,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 7,
+      "count": 6558,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 13,
+      "count": 634,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    },
+    {
+      "q": 65,
+      "x": 64,
+      "core_bitmask": 15,
+      "count": 20801,
+      "exact_set_equality": true,
+      "enumeration_nodup": true
+    }
+  ]
+}
