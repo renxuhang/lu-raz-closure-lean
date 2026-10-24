@@ -1,0 +1,383 @@
+import LatticeCounting
+namespace LuRazLattice
+namespace Identity_four_0
+set_option maxRecDepth 32768
+set_option maxHeartbeats 8000000
+set_option linter.unusedSimpArgs false
+set_option linter.unusedVariables false
+def term_0 (q e : Int) : Int := (if ((5)≤(q+3) ∧ (0:Int)≤((4)*q+(-3))) then ((((tri2 (((((4)*q+(-3))-((2)*q+(-3)))+(1))-(5)))-(tri2 ((((4)*q+(-3))-((2)*q+(-3)))-(q+3))))-(tri2 (((0:Int)-((2)*q+(-3)))-(5))))+(tri2 ((((0:Int)-((2)*q+(-3)))-(q+3))-(1)))) else (0:Int))
+theorem term_0_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_0 q e=(3*q*q+(-9)*q+6) := by
+  have v0 : ((5)≤(q+3) ∧ (0:Int)≤((4)*q+(-3))) := by omega
+  have v1 : max (0:Int) (((((4)*q+(-3))-((2)*q+(-3)))+(1))-(5))=((2)*q+(-4)) := by omega
+  have v2 : max (0:Int) ((((4)*q+(-3))-((2)*q+(-3)))-(q+3))=(q+(-3)) := by omega
+  have v3 : max (0:Int) (((0:Int)-((2)*q+(-3)))-(5))=(0:Int) := by omega
+  have v4 : max (0:Int) ((((0:Int)-((2)*q+(-3)))-(q+3))-(1))=(0:Int) := by omega
+  simp only [term_0,tri2,pos,v0,v1,v2,v3,v4]
+  grind
+def term_1 (q e : Int) : Int := (if ((q+4)≤((2)*q+1) ∧ (0:Int)≤((4)*q+(-3))) then ((((tri2 (((((4)*q+(-3))-((2)*q+(-4)))+(1))-(q+4)))-(tri2 ((((4)*q+(-3))-((2)*q+(-4)))-((2)*q+1))))-(tri2 (((0:Int)-((2)*q+(-4)))-(q+4))))+(tri2 ((((0:Int)-((2)*q+(-4)))-((2)*q+1))-(1)))) else (0:Int))
+theorem term_1_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_1 q e=(1*q*q+(-3)*q+2) := by
+  have v0 : ((q+4)≤((2)*q+1) ∧ (0:Int)≤((4)*q+(-3))) := by omega
+  have v1 : max (0:Int) (((((4)*q+(-3))-((2)*q+(-4)))+(1))-(q+4))=(q+(-2)) := by omega
+  have v2 : max (0:Int) ((((4)*q+(-3))-((2)*q+(-4)))-((2)*q+1))=(0:Int) := by omega
+  have v3 : max (0:Int) (((0:Int)-((2)*q+(-4)))-(q+4))=(0:Int) := by omega
+  have v4 : max (0:Int) ((((0:Int)-((2)*q+(-4)))-((2)*q+1))-(1))=(0:Int) := by omega
+  simp only [term_1,tri2,pos,v0,v1,v2,v3,v4]
+  grind
+def term_2 (q e : Int) : Int := (if ((q+4)≤((2)*q+1) ∧ (0:Int)≤((4)*q+(-3))) then ((((tri2 (((((4)*q+(-3))-((2)*q+(-4)))+(1))-(q+4)))-(tri2 ((((4)*q+(-3))-((2)*q+(-4)))-((2)*q+1))))-(tri2 (((0:Int)-((2)*q+(-4)))-(q+4))))+(tri2 ((((0:Int)-((2)*q+(-4)))-((2)*q+1))-(1)))) else (0:Int))
+theorem term_2_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_2 q e=(1*q*q+(-3)*q+2) := by
+  have v0 : ((q+4)≤((2)*q+1) ∧ (0:Int)≤((4)*q+(-3))) := by omega
+  have v1 : max (0:Int) (((((4)*q+(-3))-((2)*q+(-4)))+(1))-(q+4))=(q+(-2)) := by omega
+  have v2 : max (0:Int) ((((4)*q+(-3))-((2)*q+(-4)))-((2)*q+1))=(0:Int) := by omega
+  have v3 : max (0:Int) (((0:Int)-((2)*q+(-4)))-(q+4))=(0:Int) := by omega
+  have v4 : max (0:Int) ((((0:Int)-((2)*q+(-4)))-((2)*q+1))-(1))=(0:Int) := by omega
+  simp only [term_2,tri2,pos,v0,v1,v2,v3,v4]
+  grind
+def term_3 (q e : Int) : Int := (if ((5)≤(q+3) ∧ (0:Int)≤((3)*q)) then ((((tri2 (((((3)*q)-((2)*q+(-3)))+(1))-(5)))-(tri2 ((((3)*q)-((2)*q+(-3)))-(q+3))))-(tri2 (((0:Int)-((2)*q+(-3)))-(5))))+(tri2 ((((0:Int)-((2)*q+(-3)))-(q+3))-(1)))) else (0:Int))
+theorem term_3_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_3 q e=(1*q*q+(-1)*q) := by
+  have v0 : ((5)≤(q+3) ∧ (0:Int)≤((3)*q)) := by omega
+  have v1 : max (0:Int) (((((3)*q)-((2)*q+(-3)))+(1))-(5))=(q+(-1)) := by omega
+  have v2 : max (0:Int) ((((3)*q)-((2)*q+(-3)))-(q+3))=(0:Int) := by omega
+  have v3 : max (0:Int) (((0:Int)-((2)*q+(-3)))-(5))=(0:Int) := by omega
+  have v4 : max (0:Int) ((((0:Int)-((2)*q+(-3)))-(q+3))-(1))=(0:Int) := by omega
+  simp only [term_3,tri2,pos,v0,v1,v2,v3,v4]
+  grind
+def term_4 (q e : Int) : Int := (if ((q+4)≤(q+4) ∧ (0:Int)≤((3)*q)) then ((((tri2 (((((3)*q)-((2)*q+(-4)))+(1))-(q+4)))-(tri2 ((((3)*q)-((2)*q+(-4)))-(q+4))))-(tri2 (((0:Int)-((2)*q+(-4)))-(q+4))))+(tri2 ((((0:Int)-((2)*q+(-4)))-(q+4))-(1)))) else (0:Int))
+theorem term_4_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_4 q e=(2) := by
+  have v0 : ((q+4)≤(q+4) ∧ (0:Int)≤((3)*q)) := by omega
+  have v1 : max (0:Int) (((((3)*q)-((2)*q+(-4)))+(1))-(q+4))=(1) := by omega
+  have v2 : max (0:Int) ((((3)*q)-((2)*q+(-4)))-(q+4))=(0:Int) := by omega
+  have v3 : max (0:Int) (((0:Int)-((2)*q+(-4)))-(q+4))=(0:Int) := by omega
+  have v4 : max (0:Int) ((((0:Int)-((2)*q+(-4)))-(q+4))-(1))=(0:Int) := by omega
+  simp only [term_4,tri2,pos,v0,v1,v2,v3,v4]
+  grind
+def term_5 (q e : Int) : Int := (if ((5)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+1)-(5))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_5_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_5 q e=(4*q+(-6)) := by
+  have v0 : ((5)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(5))+(1))=((2)*q+(-3)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_5,tri2,pos,v0,v1,v2]
+  grind
+def term_6 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_6_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_6 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_6,tri2,pos,v0,v1]
+  grind
+def term_7 (q e : Int) : Int := (if ((q+4)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+1)-(q+4))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_7_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_7 q e=(2*q+(-4)) := by
+  have v0 : ((q+4)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(q+4))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_7,tri2,pos,v0,v1,v2]
+  grind
+def term_8 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_8_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_8 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_8,tri2,pos,v0,v1]
+  grind
+def term_9 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_9_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_9 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_9,tri2,pos,v0,v1]
+  grind
+def term_10 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_10_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_10 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_10,tri2,pos,v0,v1]
+  grind
+def term_11 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_11_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_11 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_11,tri2,pos,v0,v1]
+  grind
+def term_12 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_12_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_12 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_12,tri2,pos,v0,v1]
+  grind
+def term_13 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_13_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_13 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_13,tri2,pos,v0,v1]
+  grind
+def term_14 (q e : Int) : Int := (if ((5)≤((2)*q+1) ∧ ((4)*q+(-2))≤((4)*q)) then (((2)*(max (0:Int) ((((2)*q+1)-(5))+(1))))*(max (0:Int) ((((4)*q)-((4)*q+(-2)))+(1)))) else (0:Int))
+theorem term_14_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_14 q e=(12*q+(-18)) := by
+  have v0 : ((5)≤((2)*q+1) ∧ ((4)*q+(-2))≤((4)*q)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(5))+(1))=((2)*q+(-3)) := by omega
+  have v2 : max (0:Int) ((((4)*q)-((4)*q+(-2)))+(1))=(3) := by omega
+  simp only [term_14,tri2,pos,v0,v1,v2]
+  grind
+def term_15 (q e : Int) : Int := (if ((q+4)≤((2)*q+1) ∧ ((4)*q+(-2))≤((4)*q)) then (((2)*(max (0:Int) ((((2)*q+1)-(q+4))+(1))))*(max (0:Int) ((((4)*q)-((4)*q+(-2)))+(1)))) else (0:Int))
+theorem term_15_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_15 q e=(6*q+(-12)) := by
+  have v0 : ((q+4)≤((2)*q+1) ∧ ((4)*q+(-2))≤((4)*q)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(q+4))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) ((((4)*q)-((4)*q+(-2)))+(1))=(3) := by omega
+  simp only [term_15,tri2,pos,v0,v1,v2]
+  grind
+def term_16 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_16_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_16 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_16,tri2,pos,v0,v1]
+  grind
+def term_17 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_17_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_17 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_17,tri2,pos,v0,v1]
+  grind
+def term_18 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_18_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_18 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_18,tri2,pos,v0,v1]
+  grind
+def term_19 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_19_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_19 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_19,tri2,pos,v0,v1]
+  grind
+def term_20 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_20_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_20 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_20,tri2,pos,v0,v1]
+  grind
+def term_21 (q e : Int) : Int := (if ((5)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+1)-(5))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_21_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_21 q e=(4*q+(-6)) := by
+  have v0 : ((5)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(5))+(1))=((2)*q+(-3)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_21,tri2,pos,v0,v1,v2]
+  grind
+def term_22 (q e : Int) : Int := (if ((q+4)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+1)-(q+4))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_22_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_22 q e=(2*q+(-4)) := by
+  have v0 : ((q+4)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(q+4))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_22,tri2,pos,v0,v1,v2]
+  grind
+def term_23 (q e : Int) : Int := (if (((2)*q+2)≤((3)*q+(-1)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_23_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_23 q e=(2*q+(-4)) := by
+  have v0 : (((2)*q+2)≤((3)*q+(-1)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_23,tri2,pos,v0,v1,v2]
+  grind
+def term_24 (q e : Int) : Int := (if (((3)*q+1)≤((4)*q+(-3)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((4)*q+(-3))-((3)*q+1))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_24_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_24 q e=(2*q+(-6)) := by
+  have v0 : (((3)*q+1)≤((4)*q+(-3)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((4)*q+(-3))-((3)*q+1))+(1))=(q+(-3)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_24,tri2,pos,v0,v1,v2]
+  grind
+def term_25 (q e : Int) : Int := (if (((2)*q+2)≤((4)*q+(-3)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((4)*q+(-3))-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_25_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_25 q e=(4*q+(-8)) := by
+  have v0 : (((2)*q+2)≤((4)*q+(-3)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((4)*q+(-3))-((2)*q+2))+(1))=((2)*q+(-4)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_25,tri2,pos,v0,v1,v2]
+  grind
+def term_26 (q e : Int) : Int := (if (((2)*q+2)≤((3)*q+(-1)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_26_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_26 q e=(2*q+(-4)) := by
+  have v0 : (((2)*q+2)≤((3)*q+(-1)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_26,tri2,pos,v0,v1,v2]
+  grind
+def term_27 (q e : Int) : Int := (if (((2)*q+2)≤((3)*q) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((3)*q)-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_27_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_27 q e=(2*q+(-2)) := by
+  have v0 : (((2)*q+2)≤((3)*q) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((3)*q)-((2)*q+2))+(1))=(q+(-1)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_27,tri2,pos,v0,v1,v2]
+  grind
+def term_28 (q e : Int) : Int := (if (((2)*q+2)≤((3)*q+(-1)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_28_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_28 q e=(2*q+(-4)) := by
+  have v0 : (((2)*q+2)≤((3)*q+(-1)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_28,tri2,pos,v0,v1,v2]
+  grind
+def term_29 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_29_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_29 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_29,tri2,pos,v0,v1]
+  grind
+def term_30 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_30_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_30 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_30,tri2,pos,v0,v1]
+  grind
+def term_31 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_31_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_31 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_31,tri2,pos,v0,v1]
+  grind
+def term_32 (q e : Int) : Int := (if ((4)≤(q+1) ∧ ((2)*q+2)≤((2)*q+3)) then (((2)*(max (0:Int) (((q+1)-(4))+(1))))*(max (0:Int) ((((2)*q+3)-((2)*q+2))+(1)))) else (0:Int))
+theorem term_32_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_32 q e=(4*q+(-8)) := by
+  have v0 : ((4)≤(q+1) ∧ ((2)*q+2)≤((2)*q+3)) := by omega
+  have v1 : max (0:Int) (((q+1)-(4))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) ((((2)*q+3)-((2)*q+2))+(1))=(2) := by omega
+  simp only [term_32,tri2,pos,v0,v1,v2]
+  grind
+def term_33 (q e : Int) : Int := (if ((q+3)≤((2)*q+1) ∧ ((2)*q+2)≤((2)*q+3)) then (((2)*(max (0:Int) ((((2)*q+1)-(q+3))+(1))))*(max (0:Int) ((((2)*q+3)-((2)*q+2))+(1)))) else (0:Int))
+theorem term_33_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_33 q e=(4*q+(-4)) := by
+  have v0 : ((q+3)≤((2)*q+1) ∧ ((2)*q+2)≤((2)*q+3)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(q+3))+(1))=(q+(-1)) := by omega
+  have v2 : max (0:Int) ((((2)*q+3)-((2)*q+2))+(1))=(2) := by omega
+  simp only [term_33,tri2,pos,v0,v1,v2]
+  grind
+def term_34 (q e : Int) : Int := (if ((4)≤(q+1) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((q+1)-(4))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_34_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_34 q e=(2*q+(-4)) := by
+  have v0 : ((4)≤(q+1) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((q+1)-(4))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_34,tri2,pos,v0,v1,v2]
+  grind
+def term_35 (q e : Int) : Int := (if ((q+3)≤((2)*q+(-1)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+(-1))-(q+3))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_35_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_35 q e=(2*q+(-6)) := by
+  have v0 : ((q+3)≤((2)*q+(-1)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+(-1))-(q+3))+(1))=(q+(-3)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_35,tri2,pos,v0,v1,v2]
+  grind
+def term_36 (q e : Int) : Int := (if (((2)*q+2)≤((2)*q+3) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+3)-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_36_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_36 q e=(4) := by
+  have v0 : (((2)*q+2)≤((2)*q+3) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+3)-((2)*q+2))+(1))=(2) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_36,tri2,pos,v0,v1,v2]
+  grind
+def term_37 (q e : Int) : Int := (if (((4)*q+(-2))≤((4)*q+(-1)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((4)*q+(-1))-((4)*q+(-2)))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_37_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_37 q e=(4) := by
+  have v0 : (((4)*q+(-2))≤((4)*q+(-1)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((4)*q+(-1))-((4)*q+(-2)))+(1))=(2) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_37,tri2,pos,v0,v1,v2]
+  grind
+def term_38 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_38_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_38 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_38,tri2,pos,v0,v1]
+  grind
+def term_39 (q e : Int) : Int := (if (((4)*q+(-2))≤((4)*q+(-1)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((4)*q+(-1))-((4)*q+(-2)))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_39_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_39 q e=(4) := by
+  have v0 : (((4)*q+(-2))≤((4)*q+(-1)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((4)*q+(-1))-((4)*q+(-2)))+(1))=(2) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_39,tri2,pos,v0,v1,v2]
+  grind
+def term_40 (q e : Int) : Int := (if (((2)*q+2)≤((3)*q) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((3)*q)-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_40_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_40 q e=(2*q+(-2)) := by
+  have v0 : (((2)*q+2)≤((3)*q) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((3)*q)-((2)*q+2))+(1))=(q+(-1)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_40,tri2,pos,v0,v1,v2]
+  grind
+def term_41 (q e : Int) : Int := (if ((q+5)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+1)-(q+5))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_41_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_41 q e=(2*q+(-6)) := by
+  have v0 : ((q+5)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(q+5))+(1))=(q+(-3)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_41,tri2,pos,v0,v1,v2]
+  grind
+def term_42 (q e : Int) : Int := (if (((2)*q+2)≤((2)*q+3) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+3)-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_42_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_42 q e=(4) := by
+  have v0 : (((2)*q+2)≤((2)*q+3) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+3)-((2)*q+2))+(1))=(2) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_42,tri2,pos,v0,v1,v2]
+  grind
+def term_43 (q e : Int) : Int := (if (((2)*q+2)≤((3)*q+(-1)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_43_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_43 q e=(2*q+(-4)) := by
+  have v0 : (((2)*q+2)≤((3)*q+(-1)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_43,tri2,pos,v0,v1,v2]
+  grind
+def term_44 (q e : Int) : Int := (if ((4)≤((2)*q) ∧ ((2)*q+2)≤((2)*q+3)) then (((2)*(max (0:Int) ((((2)*q)-(4))+(1))))*(max (0:Int) ((((2)*q+3)-((2)*q+2))+(1)))) else (0:Int))
+theorem term_44_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_44 q e=(8*q+(-12)) := by
+  have v0 : ((4)≤((2)*q) ∧ ((2)*q+2)≤((2)*q+3)) := by omega
+  have v1 : max (0:Int) ((((2)*q)-(4))+(1))=((2)*q+(-3)) := by omega
+  have v2 : max (0:Int) ((((2)*q+3)-((2)*q+2))+(1))=(2) := by omega
+  simp only [term_44,tri2,pos,v0,v1,v2]
+  grind
+def term_45 (q e : Int) : Int := (if (((2)*q+4)≤((4)*q+(-1)) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((4)*q+(-1))-((2)*q+4))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_45_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_45 q e=(4*q+(-8)) := by
+  have v0 : (((2)*q+4)≤((4)*q+(-1)) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((4)*q+(-1))-((2)*q+4))+(1))=((2)*q+(-4)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_45,tri2,pos,v0,v1,v2]
+  grind
+def term_46 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_46_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_46 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_46,tri2,pos,v0,v1]
+  grind
+def term_47 (q e : Int) : Int := (if (((2)*q+3)≤((4)*q) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((4)*q)-((2)*q+3))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_47_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_47 q e=(4*q+(-4)) := by
+  have v0 : (((2)*q+3)≤((4)*q) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((4)*q)-((2)*q+3))+(1))=((2)*q+(-2)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_47,tri2,pos,v0,v1,v2]
+  grind
+def term_48 (q e : Int) : Int := (if ((6)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) ((((2)*q+1)-(6))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_48_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_48 q e=(4*q+(-8)) := by
+  have v0 : ((6)≤((2)*q+1) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) ((((2)*q+1)-(6))+(1))=((2)*q+(-4)) := by omega
+  have v2 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_48,tri2,pos,v0,v1,v2]
+  grind
+def term_49 (q e : Int) : Int := (if ((5)≤((2)*q+(-1)) ∧ (0:Int)≤((2)*q+1)) then ((((tri2 (((((2)*q+1)-(2))+(1))-(5)))-(tri2 ((((2)*q+1)-(2))-((2)*q+(-1)))))-(tri2 (((0:Int)-(2))-(5))))+(tri2 ((((0:Int)-(2))-((2)*q+(-1)))-(1)))) else (0:Int))
+theorem term_49_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_49 q e=(4*q*q+(-18)*q+20) := by
+  have v0 : ((5)≤((2)*q+(-1)) ∧ (0:Int)≤((2)*q+1)) := by omega
+  have v1 : max (0:Int) (((((2)*q+1)-(2))+(1))-(5))=((2)*q+(-5)) := by omega
+  have v2 : max (0:Int) ((((2)*q+1)-(2))-((2)*q+(-1)))=(0:Int) := by omega
+  have v3 : max (0:Int) (((0:Int)-(2))-(5))=(0:Int) := by omega
+  have v4 : max (0:Int) ((((0:Int)-(2))-((2)*q+(-1)))-(1))=(0:Int) := by omega
+  simp only [term_49,tri2,pos,v0,v1,v2,v3,v4]
+  grind
+def term_50 (q e : Int) : Int := (if ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) then (((2)*(max (0:Int) (((0:Int)-(0:Int))+(1))))*(max (0:Int) (((0:Int)-(0:Int))+(1)))) else (0:Int))
+theorem term_50_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_50 q e=(2) := by
+  have v0 : ((0:Int)≤(0:Int) ∧ (0:Int)≤(0:Int)) := by omega
+  have v1 : max (0:Int) (((0:Int)-(0:Int))+(1))=(1) := by omega
+  simp only [term_50,tri2,pos,v0,v1]
+  grind
+def term_51 (q e : Int) : Int := (if (((2)*q+2)≤((4)*q+(-2)) ∧ (0:Int)≤((4)*q)) then ((((tri2 (((((4)*q)-(2))+(1))-((2)*q+2)))-(tri2 ((((4)*q)-(2))-((4)*q+(-2)))))-(tri2 (((0:Int)-(2))-((2)*q+2))))+(tri2 ((((0:Int)-(2))-((4)*q+(-2)))-(1)))) else (0:Int))
+theorem term_51_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_51 q e=(4*q*q+(-10)*q+6) := by
+  have v0 : (((2)*q+2)≤((4)*q+(-2)) ∧ (0:Int)≤((4)*q)) := by omega
+  have v1 : max (0:Int) (((((4)*q)-(2))+(1))-((2)*q+2))=((2)*q+(-3)) := by omega
+  have v2 : max (0:Int) ((((4)*q)-(2))-((4)*q+(-2)))=(0:Int) := by omega
+  have v3 : max (0:Int) (((0:Int)-(2))-((2)*q+2))=(0:Int) := by omega
+  have v4 : max (0:Int) ((((0:Int)-(2))-((4)*q+(-2)))-(1))=(0:Int) := by omega
+  simp only [term_51,tri2,pos,v0,v1,v2,v3,v4]
+  grind
+def term_52 (q e : Int) : Int := (if (((2)*q+2)≤((3)*q+(-1)) ∧ ((3)*q+3)≤((4)*q)) then (((2)*(max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))))*(max (0:Int) ((((4)*q)-((3)*q+3))+(1)))) else (0:Int))
+theorem term_52_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : term_52 q e=(2*q*q+(-8)*q+8) := by
+  have v0 : (((2)*q+2)≤((3)*q+(-1)) ∧ ((3)*q+3)≤((4)*q)) := by omega
+  have v1 : max (0:Int) ((((3)*q+(-1))-((2)*q+2))+(1))=(q+(-2)) := by omega
+  have v2 : max (0:Int) ((((4)*q)-((3)*q+3))+(1))=(q+(-2)) := by omega
+  simp only [term_52,tri2,pos,v0,v1,v2]
+  grind
+def sumTerms (q e : Int) : Int := term_0 q e + term_1 q e + term_2 q e + term_3 q e + term_4 q e + term_5 q e + term_6 q e + term_7 q e + term_8 q e + term_9 q e + term_10 q e + term_11 q e + term_12 q e + term_13 q e + term_14 q e + term_15 q e + term_16 q e + term_17 q e + term_18 q e + term_19 q e + term_20 q e + term_21 q e + term_22 q e + term_23 q e + term_24 q e + term_25 q e + term_26 q e + term_27 q e + term_28 q e + term_29 q e + term_30 q e + term_31 q e + term_32 q e + term_33 q e + term_34 q e + term_35 q e + term_36 q e + term_37 q e + term_38 q e + term_39 q e + term_40 q e + term_41 q e + term_42 q e + term_43 q e + term_44 q e + term_45 q e + term_46 q e + term_47 q e + term_48 q e + term_49 q e + term_50 q e + term_51 q e + term_52 q e
+theorem cell_identity (q e : Int) (h0 : 0≤(q+(-4))) (h1 : 0≤(e+(-4))) (h2 : 0≤((-e)+4)) : sumTerms q e=(16*q*q+30*q+(-46)) := by
+  simp only [sumTerms,term_0_identity q e h0 h1 h2,term_1_identity q e h0 h1 h2,term_2_identity q e h0 h1 h2,term_3_identity q e h0 h1 h2,term_4_identity q e h0 h1 h2,term_5_identity q e h0 h1 h2,term_6_identity q e h0 h1 h2,term_7_identity q e h0 h1 h2,term_8_identity q e h0 h1 h2,term_9_identity q e h0 h1 h2,term_10_identity q e h0 h1 h2,term_11_identity q e h0 h1 h2,term_12_identity q e h0 h1 h2,term_13_identity q e h0 h1 h2,term_14_identity q e h0 h1 h2,term_15_identity q e h0 h1 h2,term_16_identity q e h0 h1 h2,term_17_identity q e h0 h1 h2,term_18_identity q e h0 h1 h2,term_19_identity q e h0 h1 h2,term_20_identity q e h0 h1 h2,term_21_identity q e h0 h1 h2,term_22_identity q e h0 h1 h2,term_23_identity q e h0 h1 h2,term_24_identity q e h0 h1 h2,term_25_identity q e h0 h1 h2,term_26_identity q e h0 h1 h2,term_27_identity q e h0 h1 h2,term_28_identity q e h0 h1 h2,term_29_identity q e h0 h1 h2,term_30_identity q e h0 h1 h2,term_31_identity q e h0 h1 h2,term_32_identity q e h0 h1 h2,term_33_identity q e h0 h1 h2,term_34_identity q e h0 h1 h2,term_35_identity q e h0 h1 h2,term_36_identity q e h0 h1 h2,term_37_identity q e h0 h1 h2,term_38_identity q e h0 h1 h2,term_39_identity q e h0 h1 h2,term_40_identity q e h0 h1 h2,term_41_identity q e h0 h1 h2,term_42_identity q e h0 h1 h2,term_43_identity q e h0 h1 h2,term_44_identity q e h0 h1 h2,term_45_identity q e h0 h1 h2,term_46_identity q e h0 h1 h2,term_47_identity q e h0 h1 h2,term_48_identity q e h0 h1 h2,term_49_identity q e h0 h1 h2,term_50_identity q e h0 h1 h2,term_51_identity q e h0 h1 h2,term_52_identity q e h0 h1 h2]
+  have heq : e=(4) := by omega
+  try simp only [heq]
+  grind
+#print axioms cell_identity
+end Identity_four_0
+end LuRazLattice
