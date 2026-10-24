@@ -1,0 +1,252 @@
+STATEMENT CORRESPONDENCE FOR THE THREE-/SIX-ROW EXTENSIONS
+24 October 2026
+
+Purpose and submission boundary
+-------------------------------
+The original completed Lu--Raz quadratic-count theorem is the principal proposed
+submission. The modified constructions and their exact closure spectra are
+additional research claims, presented separately for review. This document does
+not enlarge an official problem's scope by definition, and does not certify
+eligibility, first priority, a prize amount or an accepted submission.
+
+Mathematical source
+Kengbo Lu and Abigail Raz, Note on the union-closed sets conjecture and Reimer's
+average set size theorem, arXiv:2405.10639v2 (2024), Sections 3--5:
+ https://arxiv.org/html/2405.10639v2
+The matching reference used for the original conjecture is MathDB #363119:
+ https://mathdb.com/p/363119/the-quadratic-union-closure-conjecture-for-the-constructed-f
+No matching prize identifier for a modified B family is inferred from that link.
+
+1. Principal original result versus extension result
+----------------------------------------------------
+ORIGINAL S: The paper's Conjecture 3 uses x>=5, n=4x+4. The formal family has
+q=x+1 and source labels 0,...,4q+2. Its explicit completed row at label 2q+1 is
+{2,4} union [2q+2,4q-2]. For every natural x>=3, the proved number of distinct
+nonempty-subfamily unions is (23x^2+81x+16)/2. In particular the whole paper
+range x>=5 is covered. In q-coordinates this is (23q^2+35q-42)/2. The empty-
+subfamily convention would instead add exactly one member. These facts establish
+the clarified original statement, not a count of the later modified B family.
+
+THREE-ROW V: The first balanced incidence cycle changes original labels 2,4,4q-1.
+It has nonempty closure size (23q^2+31q-30)/2 for q>=4. Its source construction,
+closure classification and full spectrum are intermediate proved results reused
+in the later development. They are not substituted for the original S in the
+principal conjecture statement.
+
+SIX-ROW B: Two further balanced cycles modify labels 1,4,4q-1 and then
+2q+2,4q-1,4q. The net six changed labels relative to S are
+ 1, 2, 4, 2q+2, 4q-1, 4q.
+B has nonempty closure size (23q^2+7q+2)/2 for q>=4. Its 27 removed and 16 added
+groups refer to the difference from C_V, not directly from C_S. Its exact
+14-piece spectrum, extrema, parameter thresholds and total weight are extension
+claims about this B. A new nomination or a separate scope determination may be
+needed; the mathematical proof does not settle that procedural question.
+
+The complete row definitions, the orientations of all three incidence cycles,
+the 43 difference forms, and the derivation of the final formulas are given in
+PROOF_EXTENSION.txt. Every interval there is inclusive. Row 0 is an actual
+source row equal to the whole ground set, not an empty-union label.
+
+2. Coordinates, generation and what is counted
+----------------------------------------------
+ Ground set             Fin(4q), identified with one-based [1,4q].
+ Fin coordinate v       natural coordinate v.val+1, never v.val.
+ Source row index i     Fin(4q+3), value 0,...,4q+2, with NO +1 shift.
+ BRow q i e             the natural-coordinate incidence predicate.
+ B q i v                BRow q i.val (v.val+1).
+ Generated q R          a nonempty list of valid row labels has union R.
+ FinGenerated q T       the corresponding actual union of finite source B rows.
+ ClosureMembers q       an exact, duplicate-free list of resulting sets.
+ FinClosureMembers q    its restriction to the actual finite ground set.
+ sixRowCardinality q    the ordinary number M of sets in that list, cast to Int.
+ sixRowFrequency q e    the ordinary number f(e) of its sets containing e.
+ sixRowTotalWeight q    the ordinary total W=sum_T |T|.
+
+Arbitrary row-list length and repeated labels are allowed by Generated; the
+union relation has no small-list cutoff. Repetitions do not create additional
+sets in the exact Nodup enumeration. Membership and non-membership in the
+43 groups are extensional set statements. Their constructor parameter is not
+a substitute for the set it evaluates to: semantic injectivity is proved.
+
+The spectrum entry spectrumPolynomial2 is TWICE the ordinary frequency.
+The cardinality polynomial 23q^2+7q+2 equals 2M; the weight polynomial
+69q^3+15q^2-18q-34 equals 2W. Ratios divide f by M, so the factors of two cancel.
+All fourteen spectrum pieces assert 1<=e<=4q and q>=4. The natural-coordinate
+frequency is proved zero outside [1,4q]; the polynomial definition has no claimed
+frequency interpretation outside that range. All rational inequalities use
+cross multiplication by a positive denominator, not rounded percentages.
+
+Source B has 4q+3 rows and each point occurs in 2q+1 of them, below one half.
+Closure C_B has M sets, and each point occurs in more than half of them. These
+are different families. The package is not a union-closed counterexample with
+no abundant element, and supplies no disproof of Frankl's conjecture.
+
+3. Precise mapping to the original public record
+-----------------------------------------------
+The locally recorded principal publication is
+ https://github.com/renxuhang/lu-raz-closure-lean
+fixed at
+ e12a3abd3fb93aedd4816e780a1caf1156e45c1a
+ https://github.com/renxuhang/lu-raz-closure-lean/tree/e12a3abd3fb93aedd4816e780a1caf1156e45c1a
+The scope/eligibility consultation is
+ https://github.com/TheJustinSunPrize/awards/issues/5130
+The publication record reports 97 uploaded files matched to the reviewed local
+version. Those are original-S materials. Their public date must not be reused
+as evidence of publication of the later extension files. At preparation of this
+note, the frozen extension verification records mark the new results as not
+publicly posted. A subsequent release must identify its own commit and date.
+
+Original-S theorem names are in the previous fixed source, not all in the
+341-module extension dependency graph:
+ LuRazTotalClosure.lean, namespace LuRazClosure:
+  closure_cardinality_for_every_x
+    x>=3; exact nonempty closure polynomial for the completed original S.
+ LuRazSubmissionBridge.lean, namespace LuRazSubmission:
+  omitted_row_forced; balanced_completion_unique
+    the missing row is uniquely forced by the other printed rows plus balance.
+  nonempty_subfamily_iff
+    arbitrary nonempty row-subfamily semantics agrees with the list union.
+  nonempty_count_in_paper_range
+    the same count in the paper's x>=5 range.
+  including_empty_count
+    the ordinary arbitrary-subfamily closure has exactly one extra empty set.
+  every_balanced_completion_count
+    count for any completion retaining the printed rows and uniform frequencies.
+
+The old 22 October correspondence/prior-work prose reported that author program
+links could not then be read. The later SOURCE_PROGRAM_EVIDENCE.txt supplements
+that historical state: the author generator and closure program text were
+subsequently inspected. It records that generator.cpp includes the missing row
+and uclosure.cpp seeds singleton/nonempty-subfamily unions without an empty seed.
+Those programs were inspected, not executed. The Lean statements are about the
+explicit completed family and do not assume their code correct or infer author
+intent as a mathematical axiom. The later source-evidence record should be read
+with the original prose, rather than preserving its earlier access limitation
+as if it were the current status.
+
+4. Exact extension theorem correspondence
+-----------------------------------------
+The following names were checked against the actual source declarations and the
+frozen theorem-api.json navigation for the closure and spectrum packages. The
+source files contain the hypotheses and formal definitions; the descriptions
+below specify the mathematical scope a reviewer should assess.
+
+Construction (SixRowResults.lean, namespace LuRazSixRow):
+ completed_construction
+  For q>=4, B satisfies the full paired-filter Reimer condition; is nontrivial;
+  has distinct rows, equal source frequencies 2q+1, no abundant source element,
+  and is not union closed. Every row size equals its original-S row size and
+  the minimum size is q-1, attained by an actual row.
+
+Actual differences (SixRowGlobalDifference.lean, namespace LuRazSixRowClosure):
+ removed_exact / added_exact
+  For any ordinary subset predicate R, the old-only/new-only generation iff
+  the corresponding valid explicit removed/added form evaluates to R.
+ closure_delta_exact
+  Actual B generation iff (actual V generation and not Removed) or Added.
+
+Typed enumeration and actual uniqueness
+ (SixRowDifferenceLists.lean, namespace LuRazSixRowClosure.Difference):
+ removedList_exact / addedList_exact
+  Typed-list membership iff the respective Valid parameter conditions.
+ removedList_length / addedList_length
+  The ordinary typed-list lengths, cast to Int, are 25q-24 and 13q-8.
+ (SixRowDifferenceListsNodup.lean, same namespace):
+ removedList_nodup / addedList_nodup
+  No typed forms repeat in the enumerations.
+ (SixRowDifferenceUnique.lean, same namespace):
+ removed_form_unique / added_form_unique
+  Equality at every coordinate of evaluated VALID forms forces equality of
+  their constructor and all parameters. This is the set-level uniqueness step.
+
+Actual finite closure (SixRowFiniteClosure.lean,
+ namespace LuRazSixRowClosure):
+ finite_closure_cardinality
+  There is a Nodup list of ordinary finite subsets whose membership iff
+  FinGenerated and whose length satisfies 2M=23q^2+7q+2.
+ finite_closure_strict_improvement
+  Ordinary finite closure M_V-M_B=12q-16.
+ finite_closure_q4
+  The length of the actual finite closure at q=4 equals 199.
+ The additional comparison M_S-M_B=14q-22 in the English note is a direct
+ arithmetic consequence of the original-S and B formulas, not a separate
+ named claim of global optimality.
+
+Actual frequency (SixRowFrequencyBridge.lean,
+ namespace LuRazSixRowSpectrum):
+ six_row_frequency_delta
+  CountAt of the actual B closure equals V CountAt minus removed plus added,
+  for every Nat e, on the actual exact lists proved above.
+ six_row_frequency_finite_exact / six_row_fin_frequency_eq
+  The finite-source enumeration is exact, and finite frequency equals the
+  natural-coordinate frequency at e.val+1.
+ six_row_frequency_outside
+  Frequency vanishes when e=0 or 4q<e.
+
+Complete spectrum (SixRowCompleteSpectrum.lean, same namespace):
+ six_row_frequency_spectrum
+  For q>=4 and 1<=e<=4q, 2f(e)=spectrumPolynomial2 q e, with the fourteen
+  pieces printed in PROOF_EXTENSION.txt.
+ six_row_fin_frequency_spectrum
+  The same equality for every e : Fin(4q), evaluated at e.val+1.
+
+Final ordinary-closure consequences (SixRowSpectrumResults.lean,
+ namespace LuRazSixRowSpectrum):
+ six_row_cardinality_formula
+  2M=23q^2+7q+2.
+ six_row_frequency_minimum_value / six_row_frequency_minimum_exact
+  2min f=15q^2+7q-14; equality at a coordinate iff e=3q.
+ six_row_frequency_maximum_value / six_row_frequency_maximum_bound
+  2max f=19q^2+q+2, attained at e=q+2 for all q>=4.
+ six_row_frequency_one_gap
+  f(q+2)=f(1)+1.
+ six_row_frequency_maximum_exact
+  For q>=5 the maximum is unique at q+2.
+ six_row_frequency_q4_maximum / six_row_frequency_maximum_threshold
+  For q=4 the maximum is 155, exactly at 6 and 15; uniqueness at q+2
+  holds iff q>=5.
+ six_row_frequency_uniform_lower_sharp / six_row_frequency_uniform_lower_equality
+  Best rational all-parameter, all-coordinate uniform lower bound is 127/199;
+  equality iff q=4,e=12. The sharp theorem allows any integer numerator and
+  positive integer denominator; it is not an experimental decimal bound.
+ six_row_frequency_strict_half / six_row_frequency_strict_upper
+  All coordinates of C_B occur strictly more than M/2 and strictly less
+  than 19M/23.
+ six_row_frequency_fifteen_twenty_three_threshold
+  Every coordinate has f(e)>15M/23 iff q>=7.
+ six_row_frequency_minimum_tail_sharp / six_row_frequency_maximum_tail_sharp
+  Every rational bound greater than 15/23 eventually fails as a lower bound
+  on the minimum; every nonnegative rational bound smaller than 19/23 is
+  exceeded by a maximum on every parameter tail. These do not invoke a
+  formal Real-limit theorem or assert a uniform lower bound of 15/23 at q=4.
+ six_row_minimum_ratio_parameter_maximum
+  Within B_q for integer q>=4, min_e f(e)/M<=653/995; equality iff q=13.
+ six_row_finite_frequency_bounds / six_row_finite_frequency_minimum_exact /
+ six_row_finite_frequency_maximum_exact
+  The corresponding ordinary Fin-coordinate bounds and uniqueness results.
+ six_row_total_weight_formula / six_row_finite_total_weight_formula
+  2W=69q^3+15q^2-18q-34 for natural-coordinate and actual finite closure.
+ six_row_mean_size_deficit / six_row_mean_size_below_threeq
+  3qM-W=3q^2+12q+17>0, so the average member size is less than 3q.
+ six_row_total_weight_improvement
+  Ordinary W_V-W_B=35q^2-35q-26.
+
+5. What these correspondences do and do not certify
+---------------------------------------------------
+Every displayed new polynomial is connected to the same actual B generation
+relation, using full difference iff proofs, semantic uniqueness, enumeration,
+frequency transfers and incidence double counting. No closed formula has been
+adopted as a definition of actual closure cardinality, frequency or weight.
+
+The original conjecture, the variant construction problem, and the all-parameter
+spectrum problem are distinct claims. All q>=4 extension results are unconditional
+mathematical theorems about the explicitly defined B. Their relevance to a
+specific prize problem, novelty in the broader literature, independent human
+review, authorship/recipient eligibility and reward allocation require separate
+review. This document asserts none of those decisions.
+
+The dated manifests and verification.json are the evidence for staged compilation,
+axiom audit and bundled-kernel replay. The accompanying narrative deliberately
+distinguishes those completed checks from a later all-dependency clean build.
+A new consolidated clean-build result, publication commit or official response
+must be attached as a new record, not silently read into an older frozen report.

@@ -1,0 +1,65 @@
+{
+  "final_results": {
+    "SixRowSpectrumResults.lean": [
+      "LuRazSixRowSpectrum.six_row_cardinality_formula",
+      "LuRazSixRowSpectrum.six_row_frequency_minimum_value",
+      "LuRazSixRowSpectrum.six_row_frequency_minimum_exact",
+      "LuRazSixRowSpectrum.six_row_frequency_maximum_value",
+      "LuRazSixRowSpectrum.six_row_frequency_one_gap",
+      "LuRazSixRowSpectrum.six_row_frequency_maximum_exact",
+      "LuRazSixRowSpectrum.six_row_frequency_q4_maximum",
+      "LuRazSixRowSpectrum.six_row_frequency_maximum_bound",
+      "LuRazSixRowSpectrum.six_row_frequency_maximum_threshold",
+      "LuRazSixRowSpectrum.six_row_frequency_uniform_lower",
+      "LuRazSixRowSpectrum.six_row_frequency_strict_half",
+      "LuRazSixRowSpectrum.six_row_frequency_strict_upper",
+      "LuRazSixRowSpectrum.six_row_frequency_uniform_lower_sharp",
+      "LuRazSixRowSpectrum.six_row_frequency_uniform_lower_equality",
+      "LuRazSixRowSpectrum.six_row_minimum_ratio_parameter_maximum",
+      "LuRazSixRowSpectrum.six_row_frequency_fifteen_twenty_three_threshold",
+      "LuRazSixRowSpectrum.six_row_frequency_minimum_tail_sharp",
+      "LuRazSixRowSpectrum.six_row_frequency_maximum_tail_sharp",
+      "LuRazSixRowSpectrum.six_row_finite_frequency_bounds",
+      "LuRazSixRowSpectrum.six_row_finite_frequency_minimum_exact",
+      "LuRazSixRowSpectrum.six_row_finite_frequency_maximum_exact",
+      "LuRazSixRowSpectrum.six_row_total_weight_formula",
+      "LuRazSixRowSpectrum.six_row_finite_total_weight_formula",
+      "LuRazSixRowSpectrum.six_row_mean_size_deficit",
+      "LuRazSixRowSpectrum.six_row_mean_size_below_threeq",
+      "LuRazSixRowSpectrum.six_row_total_weight_improvement"
+    ]
+  },
+  "actual_complete_spectrum": {
+    "SixRowCompleteSpectrum.lean": [
+      "LuRazSixRowSpectrum.six_row_frequency_spectrum",
+      "LuRazSixRowSpectrum.six_row_fin_frequency_spectrum"
+    ]
+  },
+  "actual_frequency_bridge": {
+    "SixRowFrequencyBridge.lean": [
+      "LuRazSixRowSpectrum.six_row_frequency_delta",
+      "LuRazSixRowSpectrum.six_row_frequency_enumeration",
+      "LuRazSixRowSpectrum.six_row_frequency_nonnegative",
+      "LuRazSixRowSpectrum.six_row_frequency_outside",
+      "LuRazSixRowSpectrum.six_row_fin_frequency_eq",
+      "LuRazSixRowSpectrum.six_row_fin_frequency_delta",
+      "LuRazSixRowSpectrum.six_row_frequency_finite_exact"
+    ]
+  },
+  "spectrum_polynomial_relation": {
+    "SixRowSpectrumOldRelation.lean": [
+      "LuRazSixRowSpectrum.spectrum_old_relation"
+    ]
+  },
+  "sharp_arithmetic_bounds": {
+    "SixRowSpectrumSharpBounds.lean": [
+      "LuRazSixRowSpectrum.spectrum_uniform_lower",
+      "LuRazSixRowSpectrum.spectrum_strict_half",
+      "LuRazSixRowSpectrum.spectrum_strict_upper",
+      "LuRazSixRowSpectrum.spectrum_fifteen_twenty_three_threshold",
+      "LuRazSixRowSpectrum.spectrum_uniform_lower_sharp",
+      "LuRazSixRowSpectrum.spectrum_minimum_tail_sharp",
+      "LuRazSixRowSpectrum.spectrum_maximum_tail_sharp"
+    ]
+  }
+}

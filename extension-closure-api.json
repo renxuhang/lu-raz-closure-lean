@@ -1,0 +1,46 @@
+{
+  "construction": {
+    "SixRowResults.lean": [
+      "LuRazSixRow.completed_construction"
+    ]
+  },
+  "actual_difference": {
+    "SixRowGlobalDifference.lean": [
+      "LuRazSixRowClosure.removed_exact",
+      "LuRazSixRowClosure.added_exact",
+      "LuRazSixRowClosure.closure_delta_exact"
+    ]
+  },
+  "typed_enumeration": {
+    "SixRowDifferenceLists.lean": [
+      "LuRazSixRowClosure.Difference.removedList_exact",
+      "LuRazSixRowClosure.Difference.addedList_exact",
+      "LuRazSixRowClosure.Difference.removedList_length",
+      "LuRazSixRowClosure.Difference.addedList_length"
+    ],
+    "SixRowDifferenceListsNodup.lean": [
+      "LuRazSixRowClosure.Difference.removedList_nodup",
+      "LuRazSixRowClosure.Difference.addedList_nodup"
+    ]
+  },
+  "semantic_uniqueness": {
+    "SixRowDifferenceUnique.lean": [
+      "LuRazSixRowClosure.Difference.removed_form_unique",
+      "LuRazSixRowClosure.Difference.added_form_unique"
+    ]
+  },
+  "natural_predicate_closure": {
+    "SixRowTotalClosure.lean": [
+      "LuRazSixRowClosure.closure_cardinality",
+      "LuRazSixRowClosure.closure_members_length",
+      "LuRazSixRowClosure.closure_strict_improvement"
+    ]
+  },
+  "finite_actual_source_closure": {
+    "SixRowFiniteClosure.lean": [
+      "LuRazSixRowClosure.finite_closure_cardinality",
+      "LuRazSixRowClosure.finite_closure_strict_improvement",
+      "LuRazSixRowClosure.finite_closure_q4"
+    ]
+  }
+}

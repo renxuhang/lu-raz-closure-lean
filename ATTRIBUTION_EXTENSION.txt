@@ -1,0 +1,85 @@
+ATTRIBUTION, TOOL DISCLOSURE AND CLAIM OWNERSHIP FOR THE EXTENSION
+24 October 2026
+
+Prior mathematical work
+-----------------------
+The original construction, its Reimer-condition context, and the conjectured
+quadratic count are credited to Kengbo Lu and Abigail Raz, arXiv:2405.10639v2
+(2024). Abigail Raz's 2017 finite Reimer-condition counterexample is separate
+prior work; this package does not attribute that discovery to its uploader.
+The completed original S, its author-program correspondence, and the precise
+nonempty-union convention are explained in the principal submission's original
+attribution/correspondence files and SOURCE_PROGRAM_EVIDENCE.txt.
+
+What this development contributes for review
+--------------------------------------------
+The development established an explicit completed-family proof of the original
+quadratic count, with Lean statement bridges. The subsequent extension develops
+balanced incidence modifications V, W and B, proves the required source-family
+properties, and proves the exact nonempty closure and spectrum statements for B.
+The B comparison is with V: 27 exhaustive duplicate-free removed groups and
+16 added groups, of sizes 25q-24 and 13q-8. The resulting cardinality, fourteen
+coordinate-frequency formulas, unique minima, exceptional maximum tie, rational
+thresholds and ordinary total-weight formulas are the specific extension results
+submitted for mathematical review. This description separates local contributions
+from the original authors' construction and conjecture.
+
+The word "extension" identifies work produced in this development; it is not a
+certification that no equivalent construction or result exists elsewhere. The
+22 October bounded prior-work search focused on the ORIGINAL S quadratic-count
+problem. Its negative result does not establish a literature search or first-
+formalization priority for every later B spectrum, q=13 optimization, or variant.
+Any claim of world-first discovery must be supported by an updated, scoped
+literature/prior-formalization review and public provenance evidence. No such
+priority claim is made here.
+
+Human direction and AI assistance
+---------------------------------
+The work was developed under the direction of the user associated with public
+account renxuhang, using OpenAI Codex and cooperating Codex agents. Codex assisted
+mathematical exploration, identification of constructions and standard forms,
+proof strategy and derivation, Lean coding and debugging, finite cross-checking,
+prose preparation, reproducibility tooling and local audit orchestration.
+The user directed goals and choices, authorized the prior public releases, and
+provided practical installation/account interaction. This disclosure does not
+infer or quantify a named person's mathematical contribution from a username.
+
+No unverified human coauthor, institution, legal identity, award recipient or
+contribution percentage is supplied. Any named human authorship, declaration of
+contribution shares, legal recipient and AI-related eligibility must be confirmed
+by the actual contributors and the relevant review process. OpenAI Codex is a
+tool used in the development, not an undisclosed human coauthor or a proposed
+legal prize recipient. The material must not be represented as an unaided human
+proof or as having received independent external human mathematical review.
+
+Verification and independence
+-----------------------------
+Lean's ordinary elaborator/kernel checked the formal proof terms; the recorded
+bundled leanchecker replays are an additional pass by Lean's own checker. They
+are not verification by a separately implemented kernel. The finite Python
+closures and incidence counts are independent algorithms for finite cross-checks;
+they do not prove the all-parameter assertions and are not substitutes for the
+formal classification. The historical staged audits re-used previously verified,
+byte-matched dependency artifacts; any later whole-project empty-cache build
+must be identified by its own evidence rather than attributed to those stages.
+
+Publication provenance
+-----------------------
+The original-S proof was recorded at renxuhang/lu-raz-closure-lean, fixed commit
+e12a3abd3fb93aedd4816e780a1caf1156e45c1a, with scope/eligibility inquiry #5130
+in TheJustinSunPrize/awards. The separate Raz2017 formalization was recorded at
+renxuhang/raz-reimer-lean, commit 0ad8e2c0c8cc07fed05dad155687b172af29fea5,
+with inquiry #5124. Those dates and consultations do not establish a publication
+date, official acceptance or prize entitlement for the later extension files.
+At this note's preparation the frozen extension audit records describe local
+results. A new release requires its own fixed version and publication record.
+
+Reuse and scope
+----------------
+This attribution notice does not grant a new copyright license for third-party
+materials or choose a reuse license on the user's behalf. Existing notices must
+be retained; original author credit is not replaced by uploader credit. A license
+choice or licensing statement for a consolidated public release is a separate
+publication decision. The package is a proof of specified constructions and
+formulas, not a claim of global optimality, a solution to Frankl's conjecture,
+a matching official prize designation or a guarantee of an award.

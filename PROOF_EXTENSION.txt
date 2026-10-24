@@ -1,0 +1,558 @@
+A SIX-ROW MODIFICATION OF THE COMPLETED LU--RAZ FAMILY
+Exact union closure, coordinate spectrum, extrema and total weight
+English mathematical exposition accompanying the Lean sources
+24 October 2026
+
+Scope of this extension
+-----------------------
+The principal submission remains the exact quadratic count for the explicitly
+completed original Lu--Raz construction. This note concerns a different, modified
+family. It explains the mathematical content of the subsequent three-row and
+six-row research and the proof of the six-row results. It does not assert that a
+prize nomination of the original conjecture automatically covers these extensions.
+
+All results below are for integer q >= 4. Put h=2q, n=4q and r=3q+1. Write [a,b]
+for the inclusive set of integers a,...,b, taking it to be empty if b<a. All sets
+are subsets of U=[1,n]. Row labels are 0,...,n+2; labels are not coordinates.
+Let C_X denote all DISTINCT unions of NONEMPTY subfamilies of a source family X.
+Its size is M_X. For e in U, f_X(e)=|{T in C_X : e in T}|. Its total weight is
+W_X=sum_{T in C_X}|T|. A source row and a member of its closure are different
+objects; the source frequency is not the closure frequency.
+
+1. The original completed family and the three balanced modifications
+--------------------------------------------------------------------
+For a self-contained definition of the starting point, the completed original
+source S=(S_i)_{i=0}^{n+2} is as follows:
+
+ label i                  S_i
+ 0                        U
+ 1                        {2} union [h+1,n]
+ 2                        {1} union [3,h] union {n}
+ 3                        {1} union [4,h+2]
+ 4                        {1,3} union [h+3,n]
+ 5 <= i <= q+2            {1,4} union [i+1,h+i-2]
+ q+3 <= i <= h            {1,4} union [i+1,h+i-3]
+ h+1                      {2,4} union [h+2,n-2]
+ h+2                      {2,4} union [h+3,n-1]
+ h+3                      {2,3} union [h+4,n]
+ h+4 <= i <= 3q           {2,3} union [5,i-h+1] union [i+1,n]
+ 3q+1                     {2,3} union [5,q+3] union [3q+2,n-1]
+ 3q+2 <= i <= n-1         {2,3} union [5,i-h+2] union [i+1,n]
+ n                        {3} union [5,h+2] union {r}
+ n+1                      [3q+2,n]
+ n+2                      {1} union [5,q+2]
+
+The row h+1 is the explicit completion of the omitted row in the printed table.
+The previous submission proves that the other printed rows together with equal
+column frequency force this row. The extension treats the displayed S as an
+explicit mathematical object, without an assumption about author intent.
+
+First obtain V from S by replacing the following incidences, in this order of
+row label and deleted/inserted coordinate:
+ (2,4 -> n-1), (4,n-1 -> 2), (n-1,2 -> 4).
+Second obtain W from V by
+ (1,n-1 -> 4), (4,1 -> n-1), (n-1,4 -> 1).
+Third obtain B from W by
+ (h+2,n-1 -> n), (n-1,n -> h+2), (n,h+2 -> n-1).
+Each triple deletes a present incidence and inserts an absent incidence in each
+of its three rows. The deleted and inserted column multisets agree.
+
+Exactly six rows of the final B differ from the original S:
+
+ label                    B_i
+ 1                        {2,4} union [h+1,n-2] union {n}
+ 2                        {1,3} union [5,h] union {n-1,n}
+ 4                        {2,3} union [h+3,n]
+ h+2                      {2,4} union [h+3,n-2] union {n}
+ n-1                      {1,3} union [5,h+2]
+ n                        {3} union [5,h+1] union {r,n-1}.
+
+Every other B_i equals S_i. Relative to V, only rows 1,4,h+2,n-1,n change;
+relative to W, only rows h+2,n-1,n change. In particular, "six-row" counts the
+rows different from S, not the number of incidence swaps. B is LuRazSixRow.BRow
+in natural coordinates; its finite-set implementation LuRazSixRow.B uses
+coordinate e.val+1 for e : Fin(n).
+
+2. Why B retains the source construction properties
+---------------------------------------------------
+The common upper filter is indexed by the same row labels:
+ F_0=U; F_i=U\{i} for 1<=i<=n;
+ F_{n+1}=U\{1,2}; F_{n+2}=U\{3,4}.
+It is an upward-closed family of n+3 distinct sets. Every B_i is contained in F_i.
+For each pair i!=j, the proof exhibits a coordinate in B_i\F_j or in B_j\F_i.
+Consequently the Boolean intervals [B_i,F_i] and [B_j,F_j] are disjoint: a set
+belonging to both would have to contain that coordinate and omit it. The same
+separating coordinate proves that B_i and B_j are distinct. Thus the full Reimer
+condition is witnessed by an actual bijective same-index pairing with this filter,
+not just by an average-size inequality or a finite numerical test.
+
+For coatom labels 1,...,n the separation condition is B_i contains j OR B_j
+contains i. The unchanged cases inherit the earlier construction's separation;
+the pairs involving a changed label are checked from the displayed six rows.
+For the two extra filter members, one uses coordinates 1,2 and 3,4 respectively;
+row 0 is separated from a coatom by the coatom's missing coordinate. These cases
+exhaust all distinct labels and also establish row injectivity.
+
+Each incidence triple has one deletion and one addition in every affected row,
+and one deletion and one addition in every affected column. Summing indicators
+therefore preserves every original row size and every column frequency. Hence
+B has n+3 distinct rows; its minimum row size is q-1, attained at row n+1; and each
+coordinate occurs in exactly 2q+1 source rows. Since 2(2q+1)=4q+2<4q+3, B has
+no element in at least half its source rows.
+
+B itself is not union closed. Rows n+1 and n+2 have a union containing 1 and n
+but omitting 3. Every source row containing both 1 and n contains 3, as follows
+by its row case. Their union is therefore not a source row. Its closure C_B is,
+of course, union closed; later bounds show that EVERY coordinate occurs in more
+than half the members of C_B. There is no contradiction between these statements.
+
+3. The 27 removed groups and 16 added groups
+-------------------------------------------
+The comparison is between C_V and C_B. A core is the intersection with {1,2,3,4}.
+Encode it by k=sum_{j in core}2^(j-1), so core 13 is {1,3,4}, not {1,2,3}.
+Let K_k={j in {1,2,3,4}: the j-th bit of k is 1}.
+Every entry in the tables below means K_k UNION the displayed tail T. The tails
+use coordinates >=5, so this union never changes the stated core.
+
+Use these abbreviations throughout the two tables:
+ A=[5,q+2];             H=[3q+2,n];
+ C=[5,h+2] union {r};   C0=[5,h+1] union {r};
+ C1=C0 union {n-1};     L=[5,h+1] union {n};
+ Z=[5,h] union {n-1,n}; E=[h+3,n-2] union {n};
+ D=[5,h+2].
+ P=[4,q+1] union [q+3,h+1];
+ G=[4,q+1] union [q+4,h];
+ beta(t)=h+t if t<=q+1, and h+t-1 otherwise;
+ Suf(t)=[beta(t),n].
+Here H corresponds to the helper named B in SixRowDifferenceForms.lean; D to
+Lnew, C0 to Ct, C1 to Cp, L to Lp, Z to Zp, and E to Ep. This note uses H for
+the high interval to keep it distinct from the source family B.
+
+Removed groups R: exactly C_V \ C_B. The final column counts sets, not points.
+
+ tag/name         core  parameter range          tail T                 count
+ r2                 2   none                     [h+1,n]                   1
+ r3                 3   none                     A union [h+1,n]           1
+ r4(k)              4   k=0,1                    C; C union H              2
+ r5                 5   none                     C                         1
+ r6regular(t)       6   t in G                   C union Suf(t)          2q-5
+ r6exception        6   none                     C union [r,n-1]           1
+ r6d(p)             6   p=0, or p in P,p<=h-1    see (i) below           2q-4
+ r7fresh(k)         7   k=0,1,2                  E; A union E;
+                                                 [5,n-2] union {n}         3
+ r7e(p)             7   4<=p<=q+1               [5,p] union [h+3,n]       q-2
+ r7d(p)             7   4<=p<=h-1               [5,p] union [h+1,n]      2q-4
+ r10(t)            10   t=h+2,h+3               [t,n-1]                   2
+ r11j(a)           11   5<=a<=h+1               [a,n-1]                2q-3
+ r11aj(a)          11   q+4<=a<=h+1             A union [a,n-1]           q-2
+ r11ak(t)          11   t=h+2,h+3               A union [t,n-1]             2
+ r12(k)            12   k=0,1,2,3               L; L union H;
+                                                 L union C; L union H union C 4
+ r13cj(b)          13   h+2<=b<=3q-1            [5,b] union {r}           q-2
+ r13zj(b)          13   h+2<=b<=n-3             [5,b] union {n}          2q-4
+ r13czj(b)         13   h+2<=b<=3q-1            [5,b] union {r,n}         q-2
+ r13points(k)      13   k=0,1,2                 L; L union H;
+                                                 [5,h+1] union {n-1,n}     3
+ r14points(k)      14   k=0,1,2                 [5,n-2];
+                                                 [5,q+3] union [h+3,n-1];
+                                                 [5,n-2] union {n}         3
+ r14line(t)        14   h+4<=t<=n-1             [5,h+1] union [t,n]      2q-4
+ r14c(t)           14   h+4<=t<=n-1,t!=3q+2     C union [t,n]            2q-5
+ r15points(k)      15   k=0,1                   [5,q+3] union [h+3,n-1];
+                                                 [5,h+1] union
+                                                 [h+3,n-2] union {n}       2
+ r15right(a)       15   6<=a<=h+2               [a,n-2] union {n}        2q-3
+ r15gap(a)         15   q+4<=a<=h+2             A union [a,n-2] union {n} q-1
+ r15line(t)        15   h+4<=t<=n-1             [5,h+1] union [t,n]      2q-4
+ r15short(p,t)     15   4<=p<=q+1,
+                          t=h+2 or h+3          [5,p] union [t,n]        2q-4
+
+(i) For r6d(0), T=[5,n]. For r6d(p) with p!=0,
+T=[5,p] union [h+1,n]. The value 0 is a tag for the first alternative, not a
+coordinate inserted into the set. At p=4 the interval [5,p] is empty.
+
+Added groups N: exactly C_B \ C_V.
+
+ tag/name         core  parameter range          tail T                 count
+ n4(k)              4   k=0,1                    C1; C1 union H             2
+ n5(k)              5   k=0,...,6                see (ii) below             7
+ n6regular(t)       6   t in G                   C0 union Suf(t)         2q-5
+ n6exception        6   none                     C0 union [r,n-1]           1
+ n6e(p)             6   p in P                   [5,p] union [h+3,n]     2q-3
+ n7regular(t)       7   t in G                   C0 union Suf(t)         2q-5
+ n7exception        7   none                     C0 union [r,n-1]           1
+ n7right(t)         7   t=0 or 3q+2<=t<=n-1      see (iii) below           q-1
+ n7point            7   none                     [5,h+1] union [h+3,n]      1
+ n10(t)            10   t=h+1,h+2,h+3            [t,n-2] union {n}          3
+ n11j(a)           11   5<=a<=h+1                [a,n-2] union {n}       2q-3
+ n11aj(a)          11   q+4<=a<=h+1              A union [a,n-2] union {n} q-2
+ n11ak(t)          11   t=h+2,h+3                A union [t,n-2] union {n}   2
+ n13plain(b)       13   h+2<=b<=3q               [5,b]                     q-1
+ n13isolated(b)    13   h+2<=b<=3q-1             [5,b] union {r,n-1}       q-2
+ n13right(b)       13   r<=b<=n-3                [5,b] union {n-1}         q-3
+
+(ii) In order k=0,...,6, the n5 tails are
+ D, C1, D union C1, D union Z, C1 union Z, D union H, C1 union H.
+(iii) For n7right(0), T=D union [3q+2,n-1]. For t!=0,
+T=D union [t,n]. Again, the sentinel 0 is not a ground-set element.
+
+All parameter ranges are part of the statement. In particular, excluding q+2
+from P, excluding q+3 from G, and excluding 3q+2 from r14c are necessary for
+exhaustiveness without duplication. At q=4 every range above is interpreted
+literally; [q+4,h] and [r,n-3] are then singletons. No limit argument or
+"sufficiently large q" exception is used.
+
+4. Why the two difference tables are exhaustive
+------------------------------------------------
+The proof does not infer these tables by fitting finite closures. Here is the
+structural reduction used to prove their universal set meaning.
+
+Generation criterion. A set T is in C_B if and only if (a) some source row lies
+inside T and (b) each point e of T is covered by a source row lying inside T.
+The forward implication takes a row of the generating subfamily containing e.
+For the reverse implication, take all source rows contained in T. There are
+only n+3 candidate rows; (a) makes the collection nonempty, and (b) makes its
+union exactly T. This supplies both generation witnesses and non-generation
+obstructions without bounding the size of a union expression.
+
+Core restriction. Once K=T intersect {1,2,3,4} is fixed, no row whose small-core
+contains a point outside K may be selected. Checking the row definition therefore
+restricts all possible generators before their tails are combined. There are
+16 core masks. Masks 0,1,9 have unchanged closures, and mask 8 cannot occur.
+For the remaining masks the restricted row tails are intervals with at most a
+small fixed collection of isolated endpoints. Unions of the J-type rows are
+recorded by their leftmost and rightmost interval endpoints. Unions of L-type
+rows are recorded by their minimum suffix parameter and maximum prefix
+parameter. The exceptional L-row at parameter q+3 is kept separately because
+it omits n. All fixed rows are selected by Boolean flags. An induction over
+an arbitrary list of selected rows proves these reductions, rather than just
+reducing lists of some preselected maximum length.
+
+A typical J union has core {1,4} and tail [a,b], where
+ 5<=a<=h+1, h+2<=b<=n-3, and g(a)<=b,
+ g(a)=h+a-3 for a<=q+3, and g(a)=h+a-4 otherwise.
+These inequalities characterize reachable endpoint pairs and have converse row
+witnesses. Adding fixed prefixes or suffixes either absorbs an endpoint or
+leaves a visible gap; this yields a finite list of canonical possibilities.
+
+For example, in core 13={1,3,4}, every B-generated set has one of these eight
+shapes, always with K_13 adjoined:
+ [5,n];
+ [5,b],                           h+2<=b<=n-3;
+ [5,b] union {n-1},               r<=b<=n-3;
+ [5,b] union {r,n-1},             h+2<=b<=3q-1;
+ [5,b] union {n-1,n},             h+2<=b<=n-3;
+ [5,b] union {r,n-1,n},           h+2<=b<=3q-1;
+ [5,b] union [3q+2,n],            h+2<=b<=3q;
+ [5,b] union [r,n],               h+2<=b<=3q-1.
+Indeed the fixed row n now supplies C1 rather than C, the fixed row n-1
+supplies D rather than L, and the row 2 supplies Z. With a J interval present,
+the other optional fixed rows reduce to these endpoint flags. Core point 4
+forces at least one J row: none of the allowed fixed rows supplies that point.
+Core point 3 in turn forces at least one of rows n, n-1 or 2. Conversely all
+eight shapes have explicit source-row unions. Comparing this list with the
+proved V classification gives exactly the four removed and three added core-13
+groups in Section 3, including the shortened parameter ranges when endpoints
+are absorbed. One instructive obstruction is r13cj(b): for b<=r-2 its point r
+is isolated. A row needed to supply that isolated point in B also forces n-1,
+which this set lacks. A J interval cannot supply r without filling the missing
+intermediate coordinate. The old set is consequently not B-generated.
+
+Core 11={1,2,4} illustrates the other endpoint direction. A J interval together
+with at least one of rows 1,h+1,h+2 becomes a right interval [a,n-2], optionally
+with {n} or {n-1,n}. Adding row n+2 either is absorbed or leaves the visible
+prefix A. There are also five fixed-row unions with A; two further apparent
+fixed choices are already the gapped shape at a=h+1. Reducing them prevents
+counting those sets twice. This is the source of r11j/r11aj/r11ak and their
+three added counterparts.
+
+In core 6={2,3}, the changed singleton/fixed part combines with the original
+L-interval unions. Prefix/suffix absorption leaves the retained two-parameter
+L shapes, one filled exceptional shape, the regular family C0 union Suf(t),
+the exceptional suffix ending at n-1, and [5,p] union [h+3,n]. Core 7 also has
+the optional core-1 rows. Taking their unions with this core-6 list, then
+normalizing prefix absorption, yields the retained V shapes plus the four
+added groups in the core-7 table. These are genuine two-way classifications:
+valid new normal forms are generated, and every actual union has such a form.
+
+For core 14={2,3,4}, the old core-234 normal forms suffice after the relevant
+endpoint cases are removed: the changed rows can be generated within the old
+core classification, while the surviving old normal forms have B row witnesses.
+Thus this core has removed groups and no added group. The small cores 2,3,4,5,
+10,12 reduce directly to unions of a fixed finite collection of possible rows.
+Across all cores avoiding 2 and 4 there are 16 canonical fixed-row unions.
+The cases with core 5 give the seven new and one lost tails in the tables.
+
+For full core 15 the proof first shows that every B union belongs to the old
+full-core classification. It then proves and uses additional covering tests:
+ (q+2 in T OR h+1 in T),
+ (h+2 in T OR h+3 in T),
+ (h+2 in T OR n in T),
+together with the already established V tests. Necessity follows from rows
+covering core point 1, core point 4, and the relevant endpoint coordinates.
+Sufficiency is proved by constructing unions for every surviving old full-core
+normal form. Filtering the old forms by these tests removes exactly the five
+core-15 groups and adds none. For example, if h+2 is absent, a row covering 4
+cannot be row h+1; the possible remaining source rows force both h+3 and n.
+This explains why a member containing 4 but lacking h+2 and n cannot survive.
+
+Each core comparison is an iff, not just a list of observed differences.
+Combining the 16 disjoint cases proves, for every ordinary subset T of U,
+ C_B contains T iff (C_V contains T and T is in no removed group)
+                    OR T is in an added group.
+It also proves that the removed table is exactly C_V\C_B and the added table
+is exactly C_B\C_V. These statements are removed_exact, added_exact and
+closure_delta_exact in SixRowGlobalDifference.lean. No unproved classification
+hypothesis is an input to them.
+
+5. Uniqueness, typed enumeration and the cardinality formula
+-----------------------------------------------------------
+Distinct core masks give different sets. Within one core, an interval endpoint
+is recovered from the membership of the endpoint and its next point; isolated
+points n-1,n,r and the first point of a gap distinguish the shape constructors.
+For the regular suffix groups beta is strictly increasing on G: its images are
+ [h+4,3q+1] and [3q+3,n-1].
+Its argument is recovered by testing a point present at the smaller suffix
+start but absent at the larger start and not already supplied by C or C0. If
+the smaller start is r (which the fixed tail already contains), use r+1 instead;
+the next admissible suffix starts at r+2. The exception ending at n-1 is
+distinguished from a regular suffix by n. Short-prefix sentinels and filled
+cases are distinguished by a missing middle coordinate. For a two-parameter
+r15short set, the end of the low prefix recovers p (p=4 means no low prefix),
+and membership of h+2 distinguishes the two possible t values.
+
+For the finite selectors r12 and n5, a sufficient ordered collection of tests
+is h+2,r,3q+2,n-1,n. In particular the seven n5 tails have these distinct
+membership signatures, in selector order k=0,...,6:
+ k=0: (1,0,0,0,0)     k=1: (0,1,0,1,0)     k=2: (1,1,0,1,0)
+ k=3: (1,0,0,1,1)     k=4: (0,1,0,1,1)     k=5: (1,0,1,1,1)
+ k=6: (0,1,1,1,1).
+The coordinate 3q+2 is essential in this collection: it distinguishes D union Z
+from D union H, and C1 union Z from C1 union H. The r12 tails L, L union H,
+L union C, L union H union C likewise have distinct signatures under these
+tests. These calculations hold throughout q>=4 because h+2<r<3q+2<n-1<n.
+The proof also checks all cross-constructor cases, not only injectivity within
+a constructor. Consequently equality of two valid evaluated
+removed forms forces equality of their complete typed forms; likewise for added
+forms. This rules out duplicate sets both within and between the displayed groups.
+
+The typed lists are constructed by the indicated inclusive integer ranges, not
+by evaluating all subsets and discarding duplicates. Their membership iff Valid
+and their typed Nodup properties are proved. Evaluation is injective on those
+valid forms by the preceding argument, so the lists of actual sets are Nodup.
+Summing Section 3's elementary range lengths gives
+ |R|=25q-24,       |N|=13q-8.
+For an additional check on the arithmetic, grouped by core these are:
+ core          2  3  4  5   6      7      10  11     12  13     14     15
+ removed       1  1  2  1   4q-8   3q-3   2   3q-3  4   4q-5   4q-6   7q-10
+ added         0  0  2  7   4q-7   3q-4   3   3q-3  0   3q-6   0      0.
+
+Let Common=C_V\R. The actual old duplicate-free list is a permutation of
+Common followed by the removed list. Common followed by the added list is
+a duplicate-free exact enumeration of C_B; added sets cannot lie in Common
+because they were proved not to be V-generated. The known old count is
+ 2 M_V=23q^2+31q-30.
+It follows, with all operations on actual sets, that
+ M_B=M_V-(25q-24)+(13q-8),
+ 2 M_B=23q^2+7q+2,       M_V-M_B=12q-16>0.
+The original completed S has 2 M_S=23q^2+35q-42. Hence as an arithmetic
+consequence M_S-M_B=14q-22. The leading term, 23n^2/32 in terms of n, is unchanged;
+this is an improvement in the linear and constant terms, not a new leading
+quadratic constant. At q=4 the counts are M_S=233, M_V=231 and M_B=199.
+
+The natural-coordinate enumeration is supported in [1,n]. Restriction to Fin(n)
+is injective on supported sets, and lifting an actual finite union recovers its
+supported natural-coordinate set. Thus exactness and Nodup transfer to the
+ordinary finite source B, not to a separate counting model. The source list may
+repeat row labels when representing a union, but the enumeration counts each
+resulting SET once. Since all source rows are nonempty, the empty set is absent;
+allowing the empty subfamily would add exactly one empty set. Its frequency and
+weight contributions would be zero, but its additional member would change all
+frequency ratios. The ratios below always use nonempty closure.
+
+6. Counting incidences in the difference groups
+----------------------------------------------
+For any duplicate-free set list L define CountAt(L,e) as the number of its sets
+containing e. The two actual list decompositions above give the pointwise identity
+ f_B(e)=f_V(e)-CountAt(R,e)+CountAt(N,e).
+This holds for all natural-coordinate e, including e outside U, where the
+frequencies vanish. Closed polynomial formulas below are asserted only on U.
+
+The individual group counts are exact integer interval counts. Put
+ LE(a,b,x)=max(0,min(b,x)-a+1),
+ GE(a,b,x)=max(0,b-max(a,x)+1).
+For a<=b these count parameters t in [a,b] satisfying t<=x or x<=t respectively.
+Use 1[P] for the 0-or-1 indicator of a proposition P. A fixed core point appears
+in every set of its group. For e>=5, its occurrences are obtained by testing the
+tail. A fixed tail absorbs an optional interval; its contribution is therefore
+counted once, rather than added twice where two pieces overlap.
+
+For example, the r11j group has 2q-3 members. At a tail coordinate e its count is
+ 1[e<=n-1] LE(5,h+1,e).
+Its new counterpart n11j has tail count
+ 1[e<=n-2] LE(5,h+1,e) + (2q-3) 1[e=n].
+For a regular C-union-suffix group, if e is in the fixed C tail, every one of its
+2q-5 members contains e. Otherwise its suffix contribution is
+ LE(h+4,3q+1,e)+LE(3q+3,n-1,e),
+for 5<=e<=n. These are precisely the two images of beta on G. This argument
+requires the omitted suffix value 3q+2; it does not replace beta by an unbroken
+interval. For the r15short group, the tail count is
+ 2 GE(4,q+1,e) 1[5<=e<=q+1]
+   +(q-2)(1[h+2<=e<=n]+1[h+3<=e<=n]).
+For n7right, the t=0 exceptional tail ends at n-1. It is counted separately
+from the ordinary t interval, so the count at n is q-2, not q-1.
+
+The same elementary procedure is proved for all 43 groups. CountAt is additive
+over list append, so their counts sum to the removed and added frequencies.
+The definitions and proofs in SixRowDifferenceCountsDefs.lean,
+SixRowFiniteGroupCounts.lean, the Removed/Added/Regular/SpecialGroupCounts
+modules, and SixRowDifferenceCounts.lean implement these reductions. The
+polynomials are derived from actual list counts; they are not new definitions
+of what "frequency" is supposed to mean.
+
+After simplifying the clipped counts on the relevant coordinate ranges, the
+ordinary frequency change d(e)=f_B(e)-f_V(e) is:
+ e=1                 13-8q
+ e=2                 15-11q
+ e=3                 17-12q
+ e=4                 12-12q
+ 5<=e<=q+2           3e-10q+3
+ e=q+3               10-6q
+ q+4<=e<=h           15-5q-e
+ e=h+1               20-11q
+ e=h+2               19-12q
+ h+3<=e<=3q          13-7q-e
+ e=r                 15-11q
+ 3q+2<=e<=n-2        13-7q-e
+ e=n-1               15-9q
+ e=n                 18-11q.
+
+7. The complete coordinate spectrum
+------------------------------------
+Combining the previous identity with the proved V spectrum gives the following
+fourteen pieces. EVERY right-hand side in this table is 2 f_B(e), not f_B(e).
+The intervals are closed, disjoint, and cover all of [1,4q] for q>=4.
+
+ coordinate             2 f_B(e)
+ 1                      19q^2+q
+ 2                      17q^2-q
+ 3                      17q^2-q-2
+ 4                      16q^2+10q-22
+ 5<=e<=q+2              18q^2+2qe-4q-e^2+5e-4
+ q+3                    18q^2-4q+4
+ q+4<=e<=2q             16q^2+4qe-24q-2e^2+18e-32
+ 2q+1                   16q^2+12q-24
+ 2q+2                   16q^2+10q-20
+ 2q+3<=e<=3q            12q^2+4qe+16q-e^2-3e-14
+ 3q+1                   17q^2+11q-24
+ 3q+2<=e<=4q-2          -14q^2+16qe+26q-2e^2-6e
+ 4q-1                   18q^2+6q-2
+ 4q                     18q^2+2q-4.
+
+SixRowCompleteSpectrum.lean first transfers the difference-count identity to
+f_B and then proves the complete spectrum. The Fin(n) version evaluates this
+same table at e.val+1. There is no additional assumption that a coordinate
+belongs to a chosen normal-form class: every legal coordinate is covered.
+
+8. Exact extrema, exceptional parameter, and rational thresholds
+----------------------------------------------------------------
+Write D_q=23q^2+7q+2=2M_B,
+ A_q=15q^2+7q-14, and Z_q=19q^2+q+2.
+Comparing each of the fourteen polynomials with A_q and Z_q, using its inclusive
+endpoint bounds, proves
+ min_e f_B(e)=A_q/2, with equality exactly at e=3q;
+ max_e f_B(e)=Z_q/2.
+For q>=5 the maximum is attained exactly at e=q+2. For q=4 it is attained
+exactly at e=6 and e=15, both with value 155. The minimum is still unique:
+e=12, with value 127. In particular, uniqueness of the maximum holds iff q>=5.
+Also f_B(q+2)=f_B(1)+1.
+
+The comparisons can be checked directly by endpoint differences and concavity
+of the quadratic pieces; all coordinate cells are separately certified in
+SixRowSpectrumExtremaCells.lean. One useful explanation of the exceptional tie
+is Z_q-(18q^2+6q-2)=(q-1)(q-4), so the endpoint n-1 ties the usual maximizer only
+at q=4. The core-1 coordinate never ties: its doubled value is exactly Z_q-2.
+
+Since M_B>0, abundance ratios can be compared by integer cross multiplication.
+The minimum formula and the factorization
+ 199 A_q-127 D_q=8(q-4)(8q+95)
+prove the sharp uniform lower bound f_B(e)/M_B>=127/199. Equality forces q=4
+and then the unique minimum e=12. That actual set-family example also proves
+that no larger rational constant works uniformly for all q>=4 and all e.
+At the other end,
+ 19 D_q-23 Z_q=110q-8>0
+proves f_B(e)/M_B<19/23 for every q and coordinate. In particular all coordinates
+are abundant, strictly above one half, in the closure.
+
+For the stronger threshold 15/23, the exact minimum comparison is
+ 23 A_q-15 D_q=8(7q-44).
+For integer q>=4 this is positive exactly when q>=7. It follows that
+ (every coordinate e has f_B(e)>15 M_B/23) iff q>=7.
+Failure at q=4,5,6 is witnessed by e=3q, not inferred from a few sampled values.
+The ratios A_q/D_q and Z_q/D_q tend algebraically to 15/23 and 19/23. The formal
+results express sharpness without a real-analysis limit: for any rational
+constant above 15/23 and any starting Q>=4, some integer q>=Q has its minimum
+ratio below that constant; for any nonnegative rational constant below 19/23,
+some q>=Q has its maximum ratio above it. These are tail-sharp statements, not
+a claim that 15/23 is a uniform lower bound starting already at q=4.
+
+Finally, among INTEGER parameters of this particular B family, the minimum
+ratio A_q/D_q is maximized at q=13, with value 653/995. Indeed
+ 653 D_q-995 A_q=(q-13)(94q-1172).
+For q<=12 both factors are negative; for q>=14 both are positive; only q=13
+gives zero. This establishes both the bound and unique parameter, not optimality
+among all Reimer constructions or all union-closed families.
+
+9. Total weight and average size
+--------------------------------
+Counting the incidence pairs (T,e) in the two orders gives
+ W_B=sum_{T in C_B}|T|=sum_{e=1}^{4q} f_B(e).
+The formal double-counting lemma is applied to the same exact closure list as
+in Sections 5--7. Each of the fourteen consecutive coordinate ranges is summed
+using the integer formulas for sums of 1,e,e^2. The result is
+ 2 W_B=69q^3+15q^2-18q-34.
+The sum is of the DOUBLED spectrum, so division by two produces the ordinary
+weight; there is no extra factor of two in W_B's definition. The same identity
+holds for the actual finite subsets of Fin(4q), with sizes counting all 4q
+coordinates once. Combining it with the cardinality gives
+ 3q M_B-W_B=3q^2+12q+17>0.
+Thus the average member size is strictly below 3q. Using the old V weight,
+ W_V-W_B=35q^2-35q-26.
+At q=4 these statements give M_B=199 and W_B=2275.
+
+10. Formal certificate, independent checks, and review scope
+-----------------------------------------------------------
+The exposition above specifies the actual objects and the mathematical reductions.
+The Lean files contain the full finite case proofs, all generation witnesses,
+non-generation arguments, endpoint inequalities and typed-list transfers. The
+linked theorem correspondence identifies the exact audit endpoints. This text
+is an explanation of those proofs, not an independently refereed replacement
+for every finite case certificate in the source.
+
+The frozen spectrum bundle contains the 341-module recursive source dependency
+graph of SixRowSpectrumResults. Its recorded spectrum-stage audit freshly
+compiled 35 new modules, audited 209 new named theorems transitively, and replayed
+all 35 with Lean's bundled leanchecker. The preceding closure stage separately
+compiled/replayed 63 new modules and audited 401 named theorems. Previously
+verified dependency sources and cache bytes were checked against the frozen
+manifests. These historical staged audits did not themselves run one empty-project-
+cache rebuild of all 341 modules together; any later clean-build evidence is a
+separate record and must be reported as such. Only propext, Classical.choice and
+Quot.sound are allowed in the recorded audits. No sorry, admit, new mathematical
+axiom or native_decide is used. The checker is Lean's bundled kernel, not an
+independent second implementation or a human referee.
+
+For q=4,...,64,97,193,257, finite independent scripts enumerate the 43
+explicit groups and compare each group's pointwise coordinate counts with its
+interval formula; this stage does not reconstruct the actual source closures.
+For q=4,...,32,39,46,72, they reconstruct the actual B closure by fold and BFS,
+construct the V closure, and verify the actual difference sets, full coordinate
+spectrum and bit-counted total weight. Those checks informed and cross-check
+the proof. They are not its all-parameter justification. The
+q=4 ranges, isolated endpoints and 0-sentinel branches are included in the Lean
+statements, with no assumption of generic-position endpoints.
+
+The modified constructions, exact tables and bounds are presented for review as
+extensions to the original completed-family proof. The claims do not include a
+new leading quadratic constant, global minimality, a solution of Frankl's
+conjecture, proven world-first priority, a confirmed prize topic or an award.
